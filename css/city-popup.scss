@@ -1,0 +1,165 @@
+.city {
+    padding: 50px 90px 70px 65px;
+    max-width: 950px;
+    width: 100%;
+
+    .city__title {
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 39px;
+        margin-bottom: 30px;
+    }
+
+    .city__current {
+        font-family: 'Roboto';
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 18px;
+
+        .city__current-on {
+            padding: 8.5px 28px;
+            background-color: rgba($c1, .1);
+            border-radius: 4px;
+            display: inline-block;
+            margin-left: 30px;
+            width: calc(100% - 107px);
+        }
+    }
+
+    .city__list {
+
+        .city__list-title {
+            font-family: 'Roboto';
+            font-size: 14px;
+            line-height: 21px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .city__list-settings {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -35px;
+
+            .settings-title {
+                font-size: 13px;
+                line-height: 16px;
+                margin-bottom: 10px;
+            }
+
+            .settings-left {
+                padding: 0 35px;
+                position: relative;
+                width: 50%;
+
+                ul {
+                    list-style: none;
+
+                    li {
+                        margin-bottom: 2px;
+                        background-color: #ECEBF3;
+                        padding: 15px 30px;
+                        font-weight: 500;
+                        font-size: 13px;
+                        line-height: 21px;
+                        text-transform: uppercase;
+                        transition: .3s all;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: rgba($c2, .4);
+                        }
+                    }
+
+                    li.choosen-region {
+                        background-color: $c2;
+                        cursor: default;
+                    }
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    height: 100%;
+                    width: 1px;
+                    background-color: #c4c4c4;
+                }
+            }
+
+            .settings-right {
+                padding: 0 35px;
+                width: 50%;
+                position: relative;
+                height: 250px;
+
+                ul {
+                    opacity: 0;
+                    visibility: hidden;
+                    list-style: none;
+                    width: calc(100% - 70px);
+                    height: 220px;
+                    overflow: auto;
+                    position: absolute;
+                    bottom: 0;
+                    right: 35px;
+                    transition: .3s all;
+
+                    li {
+                        font-size: 15px;
+                        line-height: 21px;
+                        margin-bottom: 15px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        position: relative;
+                        transition: .3s all;
+
+                        .check {
+                            transition: .3s all;
+                            background: url(/images/city-check.svg) no-repeat 50%;
+                            width: 21px;
+                            height: 21px;
+                            opacity: 0;
+                            visibility: hidden;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                        }
+
+                        .city-for-choose {
+                            border-bottom: 2px dotted $c1;
+                            color: $c1;
+                            cursor: pointer;
+                            transition: .3s all;
+                            margin-right: 10px;
+
+                            &:hover {
+                                border-bottom: 2px dotted $c2;
+                                color: $c2;
+                            }
+                        }
+
+                        .city-area {
+                            display: inline-block;
+                        }
+                    }
+
+                    li.choosen-city {
+                        padding-left: 27px;
+
+                        .check {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+
+                        .city-for-choose {
+                            border-bottom: 2px dotted transparent;
+                            color: #f00;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
