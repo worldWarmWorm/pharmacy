@@ -32,15 +32,15 @@ function chooseCity() {
 		}
 	});
 
-	$('.settings-left ul').on('click', 'li', function() {
-		if(!$(this).hasClass('choosen-region')) {
+	$('.settings-left ul').on('click', 'li', function () {
+		if (!$(this).hasClass('choosen-region')) {
 			$('.settings-left ul li').removeClass('choosen-region');
 			$(this).addClass('choosen-region');
 
 			var tab = $(this).data('tab');
 			$('.settings-right > ul').removeClass('appear');
-			$('.settings-right > ul').each(function() {
-				if(tab == $(this).data('content')) {
+			$('.settings-right > ul').each(function () {
+				if (tab == $(this).data('content')) {
 					$(this).addClass('appear');
 				}
 			});
@@ -56,16 +56,16 @@ function setCatalog() {
 
 			var tab = $(this).data('tab');
 			$('.catalog__changing-content ul').removeClass('appear');
-			$('.catalog__changing-content ul').each(function() {
-				if(tab == $(this).data('content')) {
+			$('.catalog__changing-content ul').each(function () {
+				if (tab == $(this).data('content')) {
 					$(this).addClass('appear');
 				}
 			});
 		}
 	});
 
-	$('.catalog__changing-content ul').on('click', 'li a', function() {
-		if(!$(this).hasClass('chosen-good')) {
+	$('.catalog__changing-content ul').on('click', 'li a', function () {
+		if (!$(this).hasClass('chosen-good')) {
 			$('.catalog__changing-content ul li a').removeClass('chosen-good');
 			$(this).addClass('chosen-good');
 		}
@@ -73,6 +73,12 @@ function setCatalog() {
 }
 
 $(function () {
+	$('.settings__left').on('click', '.filter', function () {
+		$(this).toggleClass('reverse');
+		$(this).siblings('.filter').removeClass('active');
+		$(this).addClass('active');
+	});
+
 	var slider = $('.stateble-elements');
 
 	if (slider.length) {
@@ -115,6 +121,7 @@ $(function () {
 
 	setEqualHeight($(".sales__item"));
 	setEqualHeight($(".popular__item"));
+	setEqualHeight($(".analog__item"));
 
 	// $(document).on('click', '.up', function(e) {
 	// 	var input = $(this).siblings('.count'),
@@ -123,6 +130,43 @@ $(function () {
 	// 	value = value + 1;
 	// 	console.log(value)
 	// });
+
+
+
+
+	//счётчик в корзине
+	// var body = jQuery('body');
+
+	// body.on('click', '.counter-number_minus', function () {
+	// 	var inp_data = jQuery(this).parent('.counter-number').find('input.counter-backet_input');
+	// 	var data = parseInt(inp_data.val());
+	// 	if (data > 1) var new_data = data - 1;
+	// 	if (new_data == 0 || !(!!(new_data))) new_data = inp_data.attr('min');
+	// 	inp_data.val(new_data).trigger('change');
+
+	// 	if (jQuery('.additive').hasClass('active-add') && new_data == 0) {
+	// 		inp_data.closest('.additive').removeClass('active-add');
+	// 	}
+
+	// });
+
+	// body.on('click', '.counter-number_plus', function () {
+	// 	var inp_data = jQuery(this).parent('.counter-number').find('input.counter-backet_input');
+	// 	var data = parseInt(inp_data.val());
+	// 	var new_data = data + 1;
+	// 	inp_data.val(new_data).trigger('change');
+
+	// 	if (new_data > 0) {
+	// 		inp_data.closest('.additive').addClass('active-add');
+	// 	}
+	// });
+
+
+
+
+
+
+
 });
 
 $(function () {
