@@ -43,33 +43,33 @@
                 </div>
 
                 <div class="products__data">
-                    <div class="products__buttons flex">
+                    <div class="products__buttons">
                         <div class="products__buttons-left">
                             <div class="product-price"><span>134.40 </span>руб.</div>
                             <div class="price-switchers">
-                                <button>-</button>
-                                <input type="text" name="" id="" disabled>
-                                <button>+</button>
+                                <button type="button" class="toggler-btn down">-</button>
+                                <input type="text" disabled value="1" class="count">
+                                <button type="button" class="toggler-btn up">+</button>
                             </div>
                         </div>
                         <div class="products__buttons-right">
-                            <button type="button" class="btn">В корзину</button>
-                            <button type="button" class="btn">В избранное</button>
+                            <button type="button" class="btn add-to-cart">В корзину</button>
+                            <button type="button" class="btn choosen">В избранное</button>
                         </div>
                     </div>
                     <div class="products__char">
                         <h3 class="products__title">Характеристики</h3>
                         <div class="products__char-item">
                             <div class="name">
-                                Производитель
+                                <span class="string">Производитель</span>
                             </div>
                             <div class="value">
-                                Фармстандарт-Лексредства
+                                <span class="string">Фармстандарт-Лексредства</span>
                             </div>
                         </div>
                         <div class="products__char-item">
                             <div class="name">
-                                Страна - производитель
+                                <span class="string">Страна - производитель</span>
                             </div>
                             <div class="value">
                                 Россия
@@ -77,7 +77,7 @@
                         </div>
                         <div class="products__char-item">
                             <div class="name">
-                                Форма выпуска
+                                <span class="string">Форма выпуска</span>
                             </div>
                             <div class="value">
                                 Порошок для приготовления суспензии
@@ -88,8 +88,9 @@
                         <h3 class="products__title">Показания</h3>
                         <div class="products__indication-content">
                             Диарея (аллергического, лекарственного генеза; при нарушении режима питания и качественного состава пищи). Диарея
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe quidem quod nesciunt magni quis porro, vero officia sunt ad modi optio libero similique ipsa asperiores corporis eveniet recusandae minima exercitationem!Blanditiis illum dicta dolores quisquam dolorum quo rem itaque unde. Fugiat accusantium soluta recusandae ut numquam quae repellendus sint dolorem alias? Perspiciatis laudantium velit reprehenderit itaque tempora! Magni, tempore debitis?
                         </div>
-                        <button class="show-content btn">Все показания</button>
+                        <button class="show-content">Все показания <span class="close-content"></span></button>
                     </div>
                 </div>
             </div>

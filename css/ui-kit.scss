@@ -105,8 +105,19 @@ img {
 }
 
 .btn {
+    padding: 12px 24px;
+    border-radius: 4px;
+    background-color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    min-width: 160px;
+    display: block;
 
-    &:hover {}
+    &:hover {
+
+    }
 }
 
 .container {
