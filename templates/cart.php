@@ -12,7 +12,7 @@
     <h1 class="default-title">Изделия медицинского назначения</h1>
 
     <div class="cart-item__content flex">
-        <div class="sub-category__left cart-item__left">
+        <div class="navigation-pannel">
             <ul>
                 <li class="active"><a href="">Лекарственные средства</a></li>
                 <li><a href="">Витамины и бады</a></li>
@@ -23,25 +23,78 @@
                 <li><a href="">Остальные товары</a></li>
             </ul>
         </div>
-        <div class="sub-category__right cart__right">
-            <div class="cart-item__view flex">
-                <div class="cart-item__images">
-                    <div class="cart-item__main-image">
-                        <a href="/images/good.png" class="cart-item__main-image" data-fancybox="group"><img src="/images/good.png" alt="good.png"></a>
+        <div class="products">
+            <div class="products__view flex">
+                <div class="products__images">
+                    <div class="products__main-image">
+                        <a href="/images/product.png" class="cart-item__main-image" data-fancybox="group"><img src="/images/product.png" alt="product.png"></a>
                     </div>
                     <div class="cart-item__more-images">
-                        <a href="/images/good.png" data-fancybox="group"><img src="/images/good.png" alt="good.png"></a>
-                        <a href="/images/good.png" data-fancybox="group"><img src="/images/good.png" alt="good.png"></a>
-                        <a href="/images/good.png" data-fancybox="group"><img src="/images/good.png" alt="good.png"></a>
+                        <div>
+                            <a href="/images/product.png" data-fancybox="group"><img src="/images/product.png" alt="product.png"></a>
+                        </div>
+                        <div>
+                            <a href="/images/product.png" data-fancybox="group"><img src="/images/product.png" alt="product.png"></a>
+                        </div>
+                        <div>
+                            <a href="/images/product.png" data-fancybox="group"><img src="/images/product.png" alt="product.png"></a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="cart-item__data">
-                    
+                <div class="products__data">
+                    <div class="products__buttons flex">
+                        <div class="products__buttons-left">
+                            <div class="product-price"><span>134.40 </span>руб.</div>
+                            <div class="price-switchers">
+                                <button>-</button>
+                                <input type="text" name="" id="" disabled>
+                                <button>+</button>
+                            </div>
+                        </div>
+                        <div class="products__buttons-right">
+                            <button type="button" class="btn">В корзину</button>
+                            <button type="button" class="btn">В избранное</button>
+                        </div>
+                    </div>
+                    <div class="products__char">
+                        <h3 class="products__title">Характеристики</h3>
+                        <div class="products__char-item">
+                            <div class="name">
+                                Производитель
+                            </div>
+                            <div class="value">
+                                Фармстандарт-Лексредства
+                            </div>
+                        </div>
+                        <div class="products__char-item">
+                            <div class="name">
+                                Страна - производитель
+                            </div>
+                            <div class="value">
+                                Россия
+                            </div>
+                        </div>
+                        <div class="products__char-item">
+                            <div class="name">
+                                Форма выпуска
+                            </div>
+                            <div class="value">
+                                Порошок для приготовления суспензии
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__indication">
+                        <h3 class="products__title">Показания</h3>
+                        <div class="products__indication-content">
+                            Диарея (аллергического, лекарственного генеза; при нарушении режима питания и качественного состава пищи). Диарея
+                        </div>
+                        <button class="show-content btn">Все показания</button>
+                    </div>
                 </div>
             </div>
 
-            <div class="cart-item__tabs">
+            <div class="products__tabs">
 
             </div>
 

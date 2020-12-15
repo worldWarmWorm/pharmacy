@@ -12,7 +12,7 @@
     <h1 class="default-title">Изделия медицинского назначения</h1>
 
     <div class="sub-category__content flex">
-        <div class="sub-category__left">
+        <div class="navigation-pannel">
             <ul>
                 <li class="active"><a href="">Лекарственные средства</a></li>
                 <li><a href="">Витамины и бады</a></li>
@@ -23,7 +23,7 @@
                 <li><a href="">Остальные товары</a></li>
             </ul>
         </div>
-        <div class="sub-category__right">
+        <div class="products">
             <div class="sub-category__grid flex-33">
                 <div>
                     <a href="javascript:;" class="sub-category__grid-item">
