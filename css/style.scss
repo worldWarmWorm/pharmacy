@@ -1148,8 +1148,9 @@
             font-size: 13px;
             line-height: 16px;
             margin-bottom: 12px;
-            max-height: 33px;
+            height: 33px;
             overflow: hidden;
+            transition: .3s all;
         }
 
         .show-content {
@@ -1177,6 +1178,7 @@
                 cursor: pointer;
                 opacity: 0;
                 visibility: hidden;
+                transition: .3s all;
 
                 &::after {
                     content: '';
@@ -1207,12 +1209,85 @@
         }
 
         .more-content {
-            max-height: 100%;
+            height: auto;
+            animation: show 300;
 
-            +.show-content .close-content {
+            &+.show-content .close-content {
                 opacity: 1;
                 visibility: visible;
             }
         }
     }
 }
+
+.products__tabs {
+    padding: 45px 0;
+
+    .products__tabs-bar {
+        display: flex;
+        margin-bottom: 30px;
+
+        .products__tab {
+            width: 33.333%;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 20px;
+            position: relative;
+            background-color: transparent;
+            min-height: 35px;
+            padding-bottom: 10px;
+
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 3px;
+                background-color: #ECEBF3;
+                transition: .3s all;
+            }
+
+            &:hover {
+                color: $c1;
+
+                &:after {
+                    background-color: $c1;
+                }
+            }
+        }
+
+        .active-tab {
+            color: $c1;
+
+            &:after {
+                background-color: $c1;
+            }
+        }
+    }
+
+    .products__tab-contents {
+        overflow-y: auto;
+
+        .products__tab-content {
+            display: none;
+            min-height: 100px;
+            max-height: 400px;
+            font-size: 13px;
+            line-height: 16px;
+
+            p {
+                margin-bottom: 15px;
+            }
+        }
+
+        .products__tab-content:first-child {
+            display: block;
+        }
+    }
+}
+
+.products__tab {}
+
+.active-tab {}

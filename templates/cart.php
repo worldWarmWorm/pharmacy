@@ -96,7 +96,22 @@
             </div>
 
             <div class="products__tabs">
-
+                <div class="products__tabs-bar">
+                    <button type="button" class="products__tab active-tab" data-tab="1">Состав</button>
+                    <button type="button" class="products__tab" data-tab="2">Описание</button>
+                    <button type="button" class="products__tab" data-tab="3">Противопоказания</button>
+                </div>
+                <div class="products__tab-contents">
+                    <div class="products__tab-content" data-content="1">
+                        <p>1 пакет (3,76г порошка) содержит: действующее вещество:
+                            смектит диоктаэдрический - 3 г;
+                        </p>
+                        <p><b>Вспомогательные вещества:</b></p>
+                        <p>декстрозы моногидрат (глюкозы моногидрат) - 0,726 г, натрия сахаринат (сахарин натрия) - 0,007 г, ванилин - 0,004 г.</p>
+                    </div>
+                    <div class="products__tab-content" data-content="2">2</div>
+                    <div class="products__tab-content" data-content="3">3</div>
+                </div>
             </div>
 
             <div class="title title_analog">

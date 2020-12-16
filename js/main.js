@@ -123,50 +123,23 @@ $(function () {
 	setEqualHeight($(".popular__item"));
 	setEqualHeight($(".analog__item"));
 
-	// $(document).on('click', '.up', function(e) {
-	// 	var input = $(this).siblings('.count'),
-	// 		value = +input.val();
+	$('.show-content').click(function() {
+		$(this).siblings('.products__indication-content').toggleClass('more-content');
+	});
 
-	// 	value = value + 1;
-	// 	console.log(value)
-	// });
+	$('.products__tabs').on('click', '.products__tab', function() {
+		var tab = $(this).data('tab');
 
+		$(this).siblings('.products__tab').removeClass('active-tab');
+		$('.products__tab-content').stop().fadeOut(300);
+		$(this).addClass('active-tab');
 
-
-
-	//счётчик в корзине
-	// var body = jQuery('body');
-
-	// body.on('click', '.counter-number_minus', function () {
-	// 	var inp_data = jQuery(this).parent('.counter-number').find('input.counter-backet_input');
-	// 	var data = parseInt(inp_data.val());
-	// 	if (data > 1) var new_data = data - 1;
-	// 	if (new_data == 0 || !(!!(new_data))) new_data = inp_data.attr('min');
-	// 	inp_data.val(new_data).trigger('change');
-
-	// 	if (jQuery('.additive').hasClass('active-add') && new_data == 0) {
-	// 		inp_data.closest('.additive').removeClass('active-add');
-	// 	}
-
-	// });
-
-	// body.on('click', '.counter-number_plus', function () {
-	// 	var inp_data = jQuery(this).parent('.counter-number').find('input.counter-backet_input');
-	// 	var data = parseInt(inp_data.val());
-	// 	var new_data = data + 1;
-	// 	inp_data.val(new_data).trigger('change');
-
-	// 	if (new_data > 0) {
-	// 		inp_data.closest('.additive').addClass('active-add');
-	// 	}
-	// });
-
-
-
-
-
-
-
+		$('.products__tab-content').each(function() {
+			if($(this).data('content') == tab) {
+				$(this).delay(310).stop().fadeIn(300);
+			}
+		});
+	});
 });
 
 $(function () {
