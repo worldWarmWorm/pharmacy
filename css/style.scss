@@ -1268,12 +1268,11 @@
     }
 
     .products__tab-contents {
-        overflow-y: auto;
+        // overflow-y: auto;
 
         .products__tab-content {
             display: none;
-            min-height: 100px;
-            max-height: 400px;
+            // height: 400px;
             font-size: 13px;
             line-height: 16px;
 
@@ -1282,12 +1281,109 @@
             }
         }
 
-        .products__tab-content:first-child {
+        .active-content {
             display: block;
         }
     }
 }
 
-.products__tab {}
+.stocks__item {
 
-.active-tab {}
+
+    .stocks__item-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+
+        .stocks__item-head-title {
+            font-family: 'Roboto';
+            font-size: 14px;
+            line-height: 21px;
+        }
+
+        .dates {
+            background-color: $c2;
+            border-radius: 2px;
+            color: #fff;
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 16px;
+            padding: 6px 20px;
+        }
+    }
+
+
+    .stocks__item-body {
+        border-radius: 4px;
+        box-shadow: 0 0 0 1px #ECEBF3;
+
+        .stocks__item-image {
+            width: 100%;
+            height: 250px;
+            background-repeat: no-repeat;
+            background-position: 50%;
+            background-size: cover;
+            display: block;
+            border-radius: 4px;
+        }
+
+        .stocks__item-name {
+            padding: 20px;
+
+            a {
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 20px;
+                color: $c1;
+
+                &:hover {
+                    color: $c2;
+                }
+            }
+        }
+    }
+}
+
+.pagination {
+    padding: 20px 0;
+
+    ul {
+        list-style: none;
+        margin-bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 20px;
+            color: #828282;
+            display: block;
+            width: 30px;
+            padding: 10px 0 5px;
+            margin: 0 2px;
+            border-bottom: 3px solid transparent;
+            text-align: center;
+            line-height: 30px;
+
+            &:hover {
+                border-bottom: 3px solid $c2;
+                color: $c2;
+            }
+        }
+
+        .back a {
+            border: none !important;
+            width: auto;
+            margin-right: 35px;
+        }
+
+        .active a {
+            border-bottom: 3px solid $c1;
+            color: $c1;
+        }
+    }
+}

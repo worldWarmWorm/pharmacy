@@ -1,12 +1,6 @@
 <!-- Страница подкатегорий -->
 
-<section class="breadcrumbs">
-    <ul>
-        <li><a href="">Главная</a> / </li>
-        <li><a href="">Каталог</a> / </li>
-        <li><span>Изделия медицинского назначения</span></li>
-    </ul>
-</section>
+<?php require_once('breadcrumbs.php');?>
 
 <section class="sub-category">
     <h1 class="default-title">Изделия медицинского назначения</h1>

@@ -131,12 +131,12 @@ $(function () {
 		var tab = $(this).data('tab');
 
 		$(this).siblings('.products__tab').removeClass('active-tab');
-		$('.products__tab-content').stop().fadeOut(300);
+		$('.products__tab-content').removeClass('active-content');
 		$(this).addClass('active-tab');
 
 		$('.products__tab-content').each(function() {
 			if($(this).data('content') == tab) {
-				$(this).delay(310).stop().fadeIn(300);
+				$(this).addClass('active-content');
 			}
 		});
 	});

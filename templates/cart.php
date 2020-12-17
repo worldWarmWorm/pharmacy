@@ -1,12 +1,6 @@
 <!-- Страница подкатегорий -->
 
-<section class="breadcrumbs">
-    <ul>
-        <li><a href="">Главная</a> / </li>
-        <li><a href="">Каталог</a> / </li>
-        <li><span>Изделия медицинского назначения</span></li>
-    </ul>
-</section>
+<?php require_once('breadcrumbs.php');?>
 
 <section class="cart-item">
     <h1 class="default-title">Изделия медицинского назначения</h1>
@@ -102,7 +96,7 @@
                     <button type="button" class="products__tab" data-tab="3">Противопоказания</button>
                 </div>
                 <div class="products__tab-contents">
-                    <div class="products__tab-content" data-content="1">
+                    <div class="products__tab-content active-content" data-content="1">
                         <p>1 пакет (3,76г порошка) содержит: действующее вещество:
                             смектит диоктаэдрический - 3 г;
                         </p>
