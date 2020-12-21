@@ -36,6 +36,14 @@ input {
     border: none;
 }
 
+textarea {
+    resize: none;
+
+    &:focus {
+        outline: none;
+    }
+}
+
 img {
     max-width: 100%;
 }

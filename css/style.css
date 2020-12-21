@@ -34,6 +34,13 @@ input {
   border: none;
 }
 
+textarea {
+  resize: none;
+}
+textarea:focus {
+  outline: none;
+}
+
 img {
   max-width: 100%;
 }
@@ -2003,4 +2010,183 @@ h1.default-title {
 .view-other-regions a:hover {
   border-bottom: 2px dotted #60A944;
   color: #60A944;
+}
+
+.connect-form {
+  padding-top: 110px;
+  width: calc(100% - 200px);
+  padding: 37px 90px 50px 58px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#006633), to(#60A944)), #23610b;
+  background: linear-gradient(180deg, #006633 0%, #60A944 100%), #23610b;
+  border-radius: 4px;
+  color: #fff;
+  position: relative;
+  margin: 110px 0 -50px;
+}
+.connect-form .women {
+  position: absolute;
+  bottom: -1px;
+  right: -300px;
+}
+.connect-form .convert {
+  position: absolute;
+  top: -40px;
+  right: 50px;
+}
+.connect-form h2 {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 59px;
+}
+.connect-form form {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.connect-form form .left {
+  width: calc(50% - 40px);
+}
+.connect-form form .left label {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  display: block;
+  margin-bottom: 8px;
+}
+.connect-form form .left input {
+  background-color: #FCFCFD;
+  border-radius: 2px;
+  display: block;
+  margin-bottom: 14px;
+  padding: 13px 15px;
+  font-size: 13px;
+  line-height: 16px;
+  width: 100%;
+}
+.connect-form form .left input::-webkit-input-placeholder {
+  color: #828282;
+}
+.connect-form form .left input:-ms-input-placeholder {
+  color: #828282;
+}
+.connect-form form .left input::-ms-input-placeholder {
+  color: #828282;
+}
+.connect-form form .left input::placeholder {
+  color: #828282;
+}
+.connect-form form .right {
+  width: calc(50% + 30px);
+  max-width: 400px;
+}
+.connect-form form .right label {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  display: block;
+  margin-bottom: 8px;
+}
+.connect-form form .right textarea {
+  background-color: #FCFCFD;
+  border-radius: 2px;
+  display: block;
+  width: 100%;
+  min-height: 212px;
+  padding: 10px 15px;
+  font-size: 13px;
+  line-height: 16px;
+}
+.connect-form form .right textarea::-webkit-input-placeholder {
+  color: #828282;
+}
+.connect-form form .right textarea:-ms-input-placeholder {
+  color: #828282;
+}
+.connect-form form .right textarea::-ms-input-placeholder {
+  color: #828282;
+}
+.connect-form form .right textarea::placeholder {
+  color: #828282;
+}
+.connect-form form .bottom {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.connect-form form .privacy {
+  font-size: 14px;
+  line-height: 21px;
+  width: calc(50% + 50px);
+}
+.connect-form form .privacy a {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+.connect-form form .privacy input[type="checkbox"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+.connect-form form .privacy label {
+  padding-left: 35px;
+  position: relative;
+  display: inline-block;
+}
+.connect-form form .privacy label::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  background-color: #006633;
+}
+.connect-form form .privacy label::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 6px;
+  display: block;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+  cursor: pointer;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  width: 12px;
+  height: 7px;
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff;
+  z-index: 1;
+}
+.connect-form form .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -15px;
+}
+.connect-form form .buttons button {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  margin: 0 15px;
+}
+.connect-form form .buttons .reset_btn {
+  background-color: transparent;
+  -webkit-box-shadow: 0 0 0 2px #fff;
+          box-shadow: 0 0 0 2px #fff;
+}
+.connect-form form .buttons .send_btn {
+  -webkit-box-shadow: 0 0 0 2px #393185;
+          box-shadow: 0 0 0 2px #393185;
+  background-color: #393185;
 }

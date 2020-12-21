@@ -1592,3 +1592,179 @@
         color: $c2;
     }
 }
+
+.connect-form {
+    padding-top: 110px;
+    width: calc(100% - 200px);
+    padding: 37px 90px 50px 58px;
+    background: linear-gradient(180deg, #006633 0%, #60A944 100%),
+        #23610b;
+    border-radius: 4px;
+    color: #fff;
+    position: relative;
+    margin: 110px 0 -50px;
+
+    .women {
+        position: absolute;
+        bottom: -1px;
+        right: -300px;
+    }
+
+    .convert {
+        position: absolute;
+        top: -40px;
+        right: 50px;
+    }
+
+    h2 {
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 59px;
+    }
+
+    form {
+        justify-content: space-between;
+
+        .left {
+            width: calc(50% - 40px);
+
+            label {
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 20px;
+                display: block;
+                margin-bottom: 8px;
+            }
+
+
+            input {
+                background-color: #FCFCFD;
+                border-radius: 2px;
+                display: block;
+                margin-bottom: 14px;
+                padding: 13px 15px;
+                font-size: 13px;
+                line-height: 16px;
+                width: 100%;
+
+                &::placeholder {
+                    color: #828282;
+                }
+            }
+        }
+
+        .right {
+            width: calc(50% + 30px);
+            max-width: 400px;
+
+            label {
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 20px;
+                display: block;
+                margin-bottom: 8px;
+            }
+
+
+            textarea {
+                background-color: #FCFCFD;
+                border-radius: 2px;
+                display: block;
+                width: 100%;
+                min-height: 212px;
+                padding: 10px 15px;
+                font-size: 13px;
+                line-height: 16px;
+
+                &::placeholder {
+                    color: #828282;
+                }
+            }
+        }
+
+        .bottom {
+            width: 100%;
+            display: flex;
+        }
+
+        .privacy {
+            font-size: 14px;
+            line-height: 21px;
+            width: calc(50% + 50px);
+
+            a {
+                color: #fff;
+                border-bottom: 1px solid #fff;
+            }
+
+            input[type="checkbox"] {
+                position: absolute;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+                clip: rect(0 0 0 0);
+            }
+
+            label {
+                padding-left: 35px;
+                position: relative;
+                display: inline-block;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    display: block;
+                    transition: .3s all;
+                    cursor: pointer;
+                    width: 22px;
+                    height: 22px;
+                    border-radius: 4px;
+                    background-color: $c1;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 5px;
+                    top: 6px;
+                    display: block;
+                    transition: .3s all;
+                    cursor: pointer;
+                    transform: rotate(-45deg);
+                    width: 12px;
+                    height: 7px;
+                    border-bottom: 2px solid #fff;
+                    border-left: 2px solid #fff;
+                    z-index: 1;
+                }
+            }
+        }
+
+        .buttons {
+            display: flex;
+            // width: calc(50% - 50px);
+            margin: 0 -15px;
+
+            button {
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 20px;
+                color: #fff;
+                margin: 0 15px;
+            }
+
+            .reset_btn {
+                background-color: transparent;
+                box-shadow: 0 0 0 2px #fff;
+            }
+
+            .send_btn {
+                box-shadow: 0 0 0 2px #393185;
+                background-color: #393185;
+            }
+        }
+    }
+}

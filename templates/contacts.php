@@ -154,5 +154,41 @@
         <div class="view-other-regions">
             <a href="">Посмотреть адреса в другом регионе</a>
         </div>
+
+        <div class="connect-form">
+            <h2>Напишите нам</h2>
+
+            <form action="" method="post" id="" class="flex-50">
+                <div class="left">
+                    <label for="name">Имя</label>
+                    <input type="text" name="name" id="name">
+
+                    <label for="phone">Телефон</label>
+                    <input type="text" name="phone" id="phone" placeholder="+7 (___) ___ - __ - __">
+
+                    <label for="email">Почта</label>
+                    <input type="text" name="email" id="email">
+                </div>
+                <div class="right">
+                    <label for="message">Сообщение</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+                <div class="bottom">
+                    <div class="privacy">
+                        <label>
+                            <input type="checkbox" name="confirmation" id=""> Нажатие кнопки “Отправить” означает согласие с настоящей <a href="/">Политикой конфиденциальности</a>
+                        </label>
+                    </div>
+                    <div class="buttons">
+                        <button type="reset" class="btn reset_btn">Сбросить</button>
+                        <button type="submit" class="btn send_btn">Отправить</button>
+                    </div>
+                </div>
+            </form>
+            <div class="absolute-images">
+                <img src="/images/women.png" alt="women.png" class="women">
+                <img src="/images/convert.png" alt="convert.png" class="convert">
+            </div>
+        </div>
     </div>
 </section>
