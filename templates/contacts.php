@@ -3,12 +3,12 @@
 <?php require_once('breadcrumbs.php'); ?>
 
 <section class="contacts">
-    <h1 class="default-title">Акции</h1>
+    <h1 class="default-title">Контакты</h1>
 
     <div class="contacts__content">
-        <div class="contacts__head">
+        <div class="contacts__head flex">
             <div class="contacts__items">
-                <div class="tel">
+                <div class="tel flex">
                     <div class="tel__icon">
                         <img src="/images/phone.svg" alt="phone.svg">
                     </div>
@@ -17,7 +17,7 @@
                         <a href="tel:+73333332211">+7 333 333 22 11</a>
                     </div>
                 </div>
-                <div class="email">
+                <div class="email flex">
                     <div class="email__icon">
                         <img src="/images/mail-white.svg" alt="mail-white.svg">
                     </div>
@@ -26,7 +26,7 @@
                         <a href="mailto:apteka@yandex.ru">apteka@yandex.ru</a>
                     </div>
                 </div>
-                <div class="schedule">
+                <div class="schedule flex">
                     <div class="schedule__icon">
                         <img src="/images/time.svg" alt="time.svg">
                     </div>
@@ -39,35 +39,36 @@
             <div class="contacts__requisites">
                 <h3 class="contacts__requisites-title">Реквизиты</h3>
                 <div class="contacts__requisites-props">
-                    <div class="contacts__requisit-prop">
-                        <span class="key">Юридическое название</span>
-                        <span class="value">Тут юридическое название</span>
+                    <div class="contacts__requisit-prop flex-50">
+                        <div class="key">Юридическое название</div>
+                        <div class="value">Тут юридическое название</div>
                     </div>
-                    <div class="contacts__requisit-prop">
-                        <span class="key">Юридический адрес</span>
-                        <span class="value">Тут юридический адрес</span>
+                    <div class="contacts__requisit-prop flex-50">
+                        <div class="key">Юридический адрес</div>
+                        <div class="value">Тут юридический адрес</div>
                     </div>
-                    <div class="contacts__requisit-prop">
-                        <span class="key">ОГРН</span>
-                        <span class="value">0077748467898</span>
+                    <div class="contacts__requisit-prop flex-50">
+                        <div class="key">ОГРН</div>
+                        <div class="value">0077748467898</div>
                     </div>
-                    <div class="contacts__requisit-prop">
-                        <span class="key">ИНН</span>
-                        <span class="value">1234567891011</span>
+                    <div class="contacts__requisit-prop flex-50">
+                        <div class="key">ИНН</div>
+                        <div class="value">1234567891011</div>
                     </div>
                 </div>
             </div>
             <div class="contacts__social-nets">
                 <h3 class="contacts__social-nets-title">Соцсети</h3>
                 <div class="contacts__social-nets-items">
-                    <a href="/" target="_blank"><img src="/images/ok.svg" alt="ok.svg"></a>
-                    <a href="" target="_blank"><img src="/images/vk.svg" alt="vk.svg"></a>
-                    <a href="" target="_blank"><img src="/images/fb.svg" alt="fb.svg"></a>
+                    <a href="https://ok.ru" target="_blank"><img src="/images/ok.svg" alt="ok.svg"></a>
+                    <a href="https://vk.com" target="_blank"><img src="/images/vk.svg" alt="vk.svg"></a>
+                    <a href="https://ru-ru.facebook.com/" target="_blank"><img src="/images/fb.svg" alt="fb.svg"></a>
                 </div>
             </div>
         </div>
 
         <div class="addresses">
+            <h2 class="addresses__title">Адреса аптек в Сибирском Федеральном округе</h2>
             <div class="addresses__item">
                 <div class="addresses__item-data">
                     <div class="addresses__item-address">

@@ -1387,3 +1387,208 @@
         }
     }
 }
+
+.contacts {
+
+
+    .contacts__head {
+        padding: 80px 70px;
+        justify-content: space-between;
+    }
+
+    .contacts__items {
+
+        &>div {
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 16px;
+            align-items: center;
+
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+
+            [class*="__icon"] {
+                border-radius: 50%;
+                background-color: $c1;
+                width: 50px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            a,
+            span {
+                display: block;
+                font-weight: normal;
+                font-size: 13px;
+                line-height: 16px;
+                color: #000;
+                margin-top: 5px;
+            }
+
+            a {
+                border-bottom: 1px solid transparent;
+
+                &:hover {
+                    border-bottom: 1px solid #000;
+                }
+            }
+        }
+    }
+
+    h3 {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 23px;
+    }
+
+    .contacts__requisites-props {
+        .key {
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 16px;
+            padding-bottom: 19px;
+        }
+
+        .value {
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 14px;
+            padding-bottom: 19px;
+        }
+    }
+
+    .contacts__social-nets-items {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -4px;
+
+        a {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 4px 8px;
+
+            &[href*="ok.ru"] {
+                background-color: #F79A38;
+            }
+
+            &[href*="vk.com"] {
+                background-color: #7294C7;
+            }
+
+            &[href*="facebook.com"] {
+                background-color: #4E6297;
+            }
+        }
+    }
+
+    .contacts__items {
+        width: 23%;
+    }
+
+    .contacts__requisites {
+        width: 43%;
+    }
+
+    .contacts__social-nets {
+        width: auto;
+    }
+}
+
+.addresses {
+
+
+    .addresses__title {
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 19px;
+    }
+
+    .addresses__item {
+        box-shadow: 0 0 0 1px #ECEBF3;
+        border-radius: 2px;
+    }
+
+    &>div {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 16px;
+
+        .addresses__item-data {
+            width: 60%;
+            padding: 45px 70px;
+
+            .addresses__item-address {
+                display: flex;
+                align-items: center;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 22px;
+                margin-bottom: 22.5px;
+
+                .address-icon {
+                    margin-right: 15px;
+                    border-radius: 50%;
+                    background-color: #006633;
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+            .addresses__item-ditails {
+                padding-left: 55px;
+                display: flex;
+                flex-wrap: wrap;
+
+                p {
+                    width: 50%;
+                    font-weight: 500;
+                    font-size: 13px;
+                    line-height: 14px;
+                    margin: 12.5px 0;
+
+                    span {
+                        display: block;
+                        font-weight: bold;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+
+        .addresses__item-map {
+            width: 40%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.view-other-regions a {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    display: inline-block;
+    border-bottom: 2px dotted $c1;
+    color: $c1;
+
+    &:hover {
+        border-bottom: 2px dotted $c2;
+        color: $c2;
+    }
+}
