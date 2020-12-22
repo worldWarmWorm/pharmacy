@@ -34,6 +34,9 @@ button {
 input {
     outline: none;
     border: none;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 39px;
 }
 
 textarea {
@@ -122,9 +125,7 @@ img {
     min-width: 160px;
     display: block;
 
-    &:hover {
-
-    }
+    &:hover {}
 }
 
 .container {
@@ -184,9 +185,8 @@ img {
 }
 
 h1.default-title {
-    font-family: 'Roboto';
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 42px;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 39px;
     margin: 35px 0 45px;
 }

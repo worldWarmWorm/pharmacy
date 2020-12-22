@@ -32,6 +32,9 @@ button {
 input {
   outline: none;
   border: none;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 39px;
 }
 
 textarea {
@@ -191,10 +194,9 @@ img {
 }
 
 h1.default-title {
-  font-family: 'Roboto';
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 42px;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 39px;
   margin: 35px 0 45px;
 }
 
@@ -1525,26 +1527,6 @@ h1.default-title {
   font-size: 24px;
   line-height: 29px;
 }
-.products__data .products__buttons .products__buttons-left .price-switchers {
-  margin-top: 25px;
-}
-.products__data .products__buttons .products__buttons-left .price-switchers .toggler-btn {
-  width: 40px;
-  height: 40px;
-  background-color: #fff;
-  border-radius: 2px;
-  line-height: 40px;
-  text-align: center;
-  color: #C4C4C4;
-}
-.products__data .products__buttons .products__buttons-left .price-switchers .count {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
-  color: #000;
-  width: 45px;
-  text-align: center;
-}
 .products__data .products__buttons .products__buttons-right .add-to-cart {
   margin-bottom: 10px;
   background-color: #60A944;
@@ -1587,7 +1569,7 @@ h1.default-title {
 .products__data .products__char .products__char-item .value {
   width: 43%;
 }
-.products__data .products__indication .products__indication-content {
+.products__data .products__indication-content {
   font-size: 13px;
   line-height: 16px;
   margin-bottom: 12px;
@@ -1596,7 +1578,7 @@ h1.default-title {
   -webkit-transition: .3s all;
   transition: .3s all;
 }
-.products__data .products__indication .show-content {
+.products__data .show-content {
   background-color: transparent;
   font-size: 13px;
   line-height: 16px;
@@ -1605,11 +1587,11 @@ h1.default-title {
   color: #006633;
   position: relative;
 }
-.products__data .products__indication .show-content:hover {
+.products__data .show-content:hover {
   color: #60A944;
   border-bottom: 1px dashed #60A944;
 }
-.products__data .products__indication .show-content .close-content {
+.products__data .show-content .close-content {
   position: absolute;
   top: 0;
   right: -27px;
@@ -1623,7 +1605,7 @@ h1.default-title {
   -webkit-transition: .3s all;
   transition: .3s all;
 }
-.products__data .products__indication .show-content .close-content::after {
+.products__data .show-content .close-content::after {
   content: '';
   display: block;
   position: absolute;
@@ -1636,7 +1618,7 @@ h1.default-title {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
-.products__data .products__indication .show-content .close-content::before {
+.products__data .show-content .close-content::before {
   content: '';
   display: block;
   position: absolute;
@@ -1649,14 +1631,35 @@ h1.default-title {
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
 }
-.products__data .products__indication .more-content {
+.products__data .more-content {
   height: auto;
   -webkit-animation: show 300;
           animation: show 300;
 }
-.products__data .products__indication .more-content + .show-content .close-content {
+.products__data .more-content + .show-content .close-content {
   opacity: 1;
   visibility: visible;
+}
+
+.price-switchers {
+  margin-top: 25px;
+}
+.price-switchers .toggler-btn {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 2px;
+  line-height: 40px;
+  text-align: center;
+  color: #C4C4C4;
+}
+.price-switchers .count {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000;
+  width: 45px;
+  text-align: center;
 }
 
 .products__tabs {
