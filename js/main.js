@@ -73,6 +73,8 @@ function setCatalog() {
 }
 
 $(function () {
+	$('input[type="checkbox"]').prop('ckecked', true);
+
 	$('.settings__left').on('click', '.filter', function () {
 		$(this).toggleClass('reverse');
 		$(this).siblings('.filter').removeClass('active');
@@ -140,6 +142,8 @@ $(function () {
 			}
 		});
 	});
+
+	
 });
 
 $(function () {

@@ -176,7 +176,8 @@
                 <div class="bottom">
                     <div class="privacy">
                         <label>
-                            <input type="checkbox" name="confirmation" id=""> Нажатие кнопки “Отправить” означает согласие с настоящей <a href="/">Политикой конфиденциальности</a>
+                            <input type="checkbox" name="confirmation" id="" checked> Нажатие кнопки “Отправить” означает согласие с настоящей <a href="/">Политикой конфиденциальности</a>
+                            <span class="custom-check"></span>
                         </label>
                     </div>
                     <div class="buttons">

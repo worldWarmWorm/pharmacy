@@ -2135,8 +2135,7 @@ h1.default-title {
   position: relative;
   display: inline-block;
 }
-.connect-form form .privacy label::after {
-  content: '';
+.connect-form form .privacy .custom-check {
   position: absolute;
   left: 0;
   top: 0;
@@ -2149,7 +2148,7 @@ h1.default-title {
   border-radius: 4px;
   background-color: #006633;
 }
-.connect-form form .privacy label::before {
+.connect-form form .privacy .custom-check::before {
   content: '';
   position: absolute;
   left: 5px;
@@ -2162,9 +2161,13 @@ h1.default-title {
           transform: rotate(-45deg);
   width: 12px;
   height: 7px;
-  border-bottom: 2px solid #fff;
-  border-left: 2px solid #fff;
+  border-bottom: 2px solid transparent;
+  border-left: 2px solid transparent;
   z-index: 1;
+}
+.connect-form form .privacy input[type="checkbox"]:checked ~ .custom-check::before {
+  border-bottom: 2px solid #fff !important;
+  border-left: 2px solid #fff !important;
 }
 .connect-form form .buttons {
   display: -webkit-box;
@@ -2185,8 +2188,16 @@ h1.default-title {
   -webkit-box-shadow: 0 0 0 2px #fff;
           box-shadow: 0 0 0 2px #fff;
 }
+.connect-form form .buttons .reset_btn:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
 .connect-form form .buttons .send_btn {
   -webkit-box-shadow: 0 0 0 2px #393185;
           box-shadow: 0 0 0 2px #393185;
   background-color: #393185;
+}
+.connect-form form .buttons .send_btn:hover {
+  -webkit-box-shadow: 0 0 0 2px rgba(0, 102, 51, 0.5);
+          box-shadow: 0 0 0 2px rgba(0, 102, 51, 0.5);
+  background-color: rgba(65, 191, 58, 0.95);
 }
