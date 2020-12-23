@@ -8,29 +8,27 @@
     <div class="basket__content">
         <div class="basket__item">
             <div class="basket__item-head">
-                <div class="basket__item-name">
-                    <img src="/images/good-cart.png" alt="good-cart.png">
-                    <p>
-                        Неосмектин пор д/сусп д/вн прим ваниль 3 г пак/пач карт x10
-
-                    </p>
-                </div>
-                <div class="basket__item-cost">
-
-                </div>
-                <div class="basket__item-quantity">
-
-                </div>
-                <div class="basket__item-result">
-
-                </div>
+                <div class="basket__item-name">Товар</div>
+                <div class="basket__item-cost">Цена за ед.</div>
+                <div class="basket__item-quantity">Количество</div>
+                <div class="basket__item-result">Сумма</div>
             </div>
             <div class="basket__item-body">
                 <div class="basket__body-good">
-
+                    <img src="/images/good-cart.png" alt="good-cart.png">
+                    <div>
+                        Неосмектин пор д/сусп д/вн прим ваниль 3 г пак/пач карт x10
+                        <div class="chosen">
+                            <label>
+                                <input type="checkbox" name="" id=""> В избранное
+                                <span class="input-custom"></span>
+                            </label>
+                        </div>
+                    </div>
                 </div>
                 <div class="basket__body-cost">
-
+                    <span class="default-price">234.40 руб.</span>
+                    <span class="sale-price">134.40 руб.</span>
                 </div>
                 <div class="basket__body-switchers price-switchers">
                     <button type="button" class="toggler-btn down">-</button>
@@ -38,7 +36,13 @@
                     <button type="button" class="toggler-btn up">+</button>
                 </div>
                 <div class="basket__body-result">
-
+                    <div class="total-cost">
+                        <span class="default-price">234.40 руб.</span>
+                        <span class="sale-price">134.40 руб.</span>
+                    </div>
+                    <button type="button" class="delete">
+                        <span>Удалить</span>
+                    </button>
                 </div>
             </div>
         </div>
