@@ -47,16 +47,65 @@
             </div>
         </div>
 
-
-
-        <div class="basket__results">
-            <p class="rusult-costt>Товаров на сумму: <span class=" total-cost">134.40</span> <span class="currency">руб.</span></p>
-            <p class="result-sale">Скидка: <span class="total-sale">100.00</span> <span class="currency">руб.</span></p>
+        <div class="basket__item">
+            <div class="basket__item-head">
+                <div class="basket__item-name">Товар</div>
+                <div class="basket__item-cost">Цена за ед.</div>
+                <div class="basket__item-quantity">Количество</div>
+                <div class="basket__item-result">Сумма</div>
+            </div>
+            <div class="basket__item-body">
+                <div class="basket__body-good">
+                    <img src="/images/good-cart.png" alt="good-cart.png">
+                    <div>
+                        Неосмектин пор д/сусп д/вн прим ваниль 3 г пак/пач карт x10
+                        <div class="chosen">
+                            <label>
+                                <input type="checkbox" name="" id=""> В избранное
+                                <span class="input-custom"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="basket__body-cost">
+                    <span class="default-price">234.40 руб.</span>
+                    <span class="sale-price">134.40 руб.</span>
+                </div>
+                <div class="basket__body-switchers price-switchers">
+                    <button type="button" class="toggler-btn down">-</button>
+                    <input type="text" disabled value="1" class="count">
+                    <button type="button" class="toggler-btn up">+</button>
+                </div>
+                <div class="basket__body-result">
+                    <div class="total-cost">
+                        <span class="default-price">234.40 руб.</span>
+                        <span class="sale-price">134.40 руб.</span>
+                    </div>
+                    <button type="button" class="delete">
+                        <span>Удалить</span>
+                    </button>
+                </div>
+            </div>
         </div>
 
-        <div class="basket__buttons">
-            <a href="/" class="btn-to-shop btn">Продолжить покупки</a>
-            <button type="button" class="btn btn-make-order">Оформить заказ</button>
+        <div class="basket__results">
+            <div class="basket__result basket__result-cost">
+                <span>Товаров на сумму:</span>
+                <div class="basket__result-cost-size">
+                    <span class="total-cost">134.40</span> <span class="currency">руб.</span>
+                </div>
+            </div>
+            <div class="basket__result basket__result-sale">
+                <span>Скидка:</span>
+                <div class="basket__result-sale-size">
+                    <span class="total-sale">100.00</span> <span class="currency">руб.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="basket__buttons flex">
+            <div><a href="/" class="btn-to-shop btn">Продолжить покупки</a></div>
+            <div><button type="button" class="btn btn-make-order">Оформить заказ</button></div>
         </div>
     </div>
 </section>
