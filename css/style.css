@@ -32,9 +32,6 @@ button {
 input {
   outline: none;
   border: none;
-  font-weight: 900;
-  font-size: 32px;
-  line-height: 39px;
 }
 
 textarea {
@@ -2512,4 +2509,27 @@ h1.default-title {
   line-height: 32px;
   font-weight: bold;
   font-size: 18px;
+}
+.make-order__content .form-data .required {
+  color: #60A944;
+  font-size: 13px;
+  line-height: 16px;
+}
+.make-order__content .btn {
+  background-color: #60A944;
+  color: #fff;
+  -webkit-box-shadow: 0 0 0 2px #60A944;
+          box-shadow: 0 0 0 2px #60A944;
+}
+.make-order__content .btn:hover {
+  background-color: #006633;
+  -webkit-box-shadow: 0 0 0 2px #006633;
+          box-shadow: 0 0 0 2px #006633;
+}
+.make-order__content input[type="text"] {
+  border-radius: 2px;
+  -webkit-box-shadow: 0 0 0 2px #60A944;
+          box-shadow: 0 0 0 2px #60A944;
+  padding: 13.5px 15px;
+  width: 100%;
 }

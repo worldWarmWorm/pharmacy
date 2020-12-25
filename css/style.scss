@@ -2070,5 +2070,29 @@
                 font-size: 18px;
             }
         }
+
+        .required {
+            color: $c2;
+            font-size: 13px;
+            line-height: 16px;
+        }
+    }
+
+    .btn {
+        background-color: $c2;
+        color: #fff;
+        box-shadow: 0 0 0 2px $c2;
+
+        &:hover {
+            background-color: $c1;
+            box-shadow: 0 0 0 2px $c1;
+        }
+    }
+
+    input[type="text"] {
+        border-radius: 2px;
+        box-shadow: 0 0 0 2px $c2;
+        padding: 13.5px 15px;
+        width: 100%;
     }
 }
