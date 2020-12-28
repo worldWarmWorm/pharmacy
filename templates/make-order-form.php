@@ -57,7 +57,7 @@
             <div class="form-data form-address">
                 <h2>Адрес получения <span class="num">4</span></h2>
                 <div class="form-address__content flex">
-                    <label>
+                    <label class="checked-label">
                         <input type="radio" name="address" id="address1">
                         <span class="custom-radio"></span>
                         г. Новосибирск, ул. Сибиряков-Гвардейцев, 34
@@ -72,7 +72,7 @@
             <div class="form-data form-in-basket">
                 <h2>Товары в заказе <span class="num">5</span></h2>
                 <div class="form-in-basket__content">
-                    <div class="added-item flex">
+                    <div class="added-item">
                         <div class="added-item__image">
                             <img src="/images/good.png" alt="good.png">
                         </div>
@@ -86,7 +86,7 @@
                             </div>
                         </div>
                         <div class="added-item__box">
-                            <span>1 уп.</span>
+                            1 уп.
                         </div>
                         <div class="added-item__price">
                             <span class="default-price">234.40 руб.</span>
@@ -98,7 +98,26 @@
                     </div>
                 </div>
             </div>
-            <div class="form-results flex">
+            <div class="basket__results form-results flex">
+                <div class="left-pannel">
+                    <div class="basket__result basket__result-cost">
+                        <span>Товаров на сумму:</span>
+                        <div class="basket__result-cost-size">
+                            <span class="total-cost">134.40</span> <span class="currency">руб.</span>
+                        </div>
+                    </div>
+                    <div class="basket__result basket__result-sale">
+                        <span>Скидка:</span>
+                        <div class="basket__result-sale-size">
+                            <span class="total-sale">100.00</span> <span class="currency">руб.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="make-oreder-btn">
+                    <button type="submit" class="btn">Оформить заказ</button>
+                </div>
+            </div>
+            <!-- <div class="form-results flex">
                 <div class="form-result form-result_cost">
                     <span>Товаров на сумму:</span>
                     <div class="form__result-cost-size">
@@ -114,7 +133,7 @@
                 <div class="make-oreder-btn">
                     <button type="submit" class="btn">Оформить заказ</button>
                 </div>
-            </div>
+            </div> -->
         </form>
     </div>
 </section>

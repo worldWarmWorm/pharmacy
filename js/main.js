@@ -73,6 +73,11 @@ function setCatalog() {
 }
 
 $(function () {
+	$('.form-address__content').on('click', 'label', function() {
+		$('.form-address__content label').prop('class', false);
+		$(this).toggleClass('checked-label');
+	});
+
 	$('.settings__left').on('click', '.filter', function () {
 		$(this).toggleClass('reverse');
 		$(this).siblings('.filter').removeClass('active');

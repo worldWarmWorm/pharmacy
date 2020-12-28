@@ -2048,7 +2048,7 @@
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
     width: calc(100% - 260px);
-    padding: 45px 80px 50px 128px;
+    padding: 45px 65px 50px 113px;
 
     .form-data {
 
@@ -2129,8 +2129,8 @@
 
 
 .form-get__content,
-.form-pay__content {
-
+.form-pay__content,
+.form-address__content {
     label {
         font-weight: bold;
         font-size: 13px;
@@ -2156,6 +2156,67 @@
         opacity: 1;
         visibility: visible;
     }
+}
+
+.form-address__content {
+    flex-direction: column;
+
+    label {
+        padding: 21px 32px;
+        margin: 0 15px;
+        box-shadow: 0 0 0 1px #ECEBF3;
+        transition: .3s all;
+
+        &:last-child {
+            margin-left: 15px;
+            margin-top: 5px;
+        }
+
+        .custom-radio {
+            left: calc(100% - 22px);
+            border-radius: 0;
+            width: 22px;
+            height: 22px;
+            background-color: transparent;
+            box-shadow: none;
+            transition: .3s all;
+
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                right: 4px;
+                top: 4px;
+                width: 14px;
+                height: 8px;
+                border-bottom: 2px solid #fff;
+                border-left: 2px solid #fff;
+                box-shadow: none;
+                background-color: transparent;
+                border-radius: 0;
+                transform: rotate(-45deg);
+                transition: .3s all;
+            }
+        }
+
+        input[type="radio"]:checked+.custom-radio {
+            background-color: $c2;
+        }
+    }
+
+    .checked-label .custom-radio {
+        background-color: $c2;
+
+        &::before {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+.checked-label {
+    background-color: rgba($c2, .1);
+    box-shadow: 0 0 0 1px $c2 !important;
 }
 
 .custom-radio {
@@ -2184,4 +2245,100 @@
     opacity: 0;
     visibility: hidden;
     transition: .3s all;
+}
+
+.form-in-basket__content {
+    box-shadow: 0 0 0 1px #ECEBF3;
+    padding: 8px;
+
+    .added-item {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0 -11.5px;
+
+        &>div {
+            padding: 0 11.5px;
+        }
+    }
+
+    .added-item__image {
+        width: 20%;
+    }
+
+    .added-item__descr {
+        width: 44%;
+        font-size: 15px;
+        line-height: 21px;
+
+        .chosen {
+            margin-top: 8px;
+        }
+    }
+
+    .added-item__box {
+        min-width: 70px;
+        width: 10%;
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .added-item__price {
+        width: 18%;
+        min-width: 127px;
+    }
+
+    .added-item__delete {
+        width: 8%;
+        min-width: 56px;
+
+        button {
+            position: relative;
+            width: 35px;
+            height: 35px;
+            padding: 5px;
+            background-color: #fff;
+
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                left: 2px;
+                top: 15px;
+                width: 30px;
+                height: 3px;
+                border-radius: 3px;
+                background-color: #f00;
+                transform: rotate(-45deg);
+            }
+
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                left: 2px;
+                top: 15px;
+                width: 30px;
+                height: 3px;
+                border-radius: 3px;
+                background-color: #f00;
+                transform: rotate(225deg);
+            }
+        }
+    }
+}
+
+.form-results {
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+
+    .left-pannel {
+        max-width: 350px;
+        width: 100%;
+    }
+
+    .basket__result-cost {
+        margin: 0 0 10px;
+    }
 }
