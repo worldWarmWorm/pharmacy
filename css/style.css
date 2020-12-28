@@ -33,12 +33,36 @@ input {
   outline: none;
   border: none;
 }
+input::-webkit-input-placeholder {
+  color: #4F4F4F;
+}
+input:-ms-input-placeholder {
+  color: #4F4F4F;
+}
+input::-ms-input-placeholder {
+  color: #4F4F4F;
+}
+input::placeholder {
+  color: #4F4F4F;
+}
 
 textarea {
   resize: none;
 }
 textarea:focus {
   outline: none;
+}
+textarea::-webkit-input-placeholder {
+  color: #4F4F4F;
+}
+textarea:-ms-input-placeholder {
+  color: #4F4F4F;
+}
+textarea::-ms-input-placeholder {
+  color: #4F4F4F;
+}
+textarea::placeholder {
+  color: #4F4F4F;
 }
 
 img {
@@ -75,6 +99,10 @@ img {
 }
 .flex > div {
   padding: 0 15px;
+}
+
+.required {
+  color: #006633;
 }
 
 .flex-25 {
@@ -2481,6 +2509,10 @@ h1.default-title {
           box-shadow: inset 0 0 0 2px #006633;
 }
 
+.make-order__form > div [class*="__content"] {
+  margin-bottom: 55px;
+}
+
 .make-order__content {
   background-color: #fff;
   -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
@@ -2532,4 +2564,87 @@ h1.default-title {
           box-shadow: 0 0 0 2px #60A944;
   padding: 13.5px 15px;
   width: 100%;
+  margin: 6px 0 21px;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+.make-order__content input[type="text"]:focus {
+  -webkit-box-shadow: 0 0 0 2px #60A944, inset 0 0 0 2px rgba(0, 102, 51, 0.2);
+          box-shadow: 0 0 0 2px #60A944, inset 0 0 0 2px rgba(0, 102, 51, 0.2);
+}
+
+.form-info__content {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.form-info__content label {
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+  margin: 0 15px;
+}
+.form-info__content .name {
+  width: calc(100% - 30px);
+}
+.form-info__content .phone,
+.form-info__content .email {
+  width: calc(50% - 30px);
+}
+
+.form-get__content label,
+.form-pay__content label {
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+  position: relative;
+  cursor: pointer;
+  padding: 0 15px 0 49px;
+}
+.form-get__content label:last-child,
+.form-pay__content label:last-child {
+  margin-left: 30px;
+}
+.form-get__content input[type="radio"],
+.form-pay__content input[type="radio"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+.form-get__content input[type="radio"]:checked + .custom-radio::before,
+.form-pay__content input[type="radio"]:checked + .custom-radio::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.custom-radio {
+  display: block;
+  position: absolute;
+  left: 18px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  -webkit-box-shadow: 0 0 0 2px #BDBDBD;
+          box-shadow: 0 0 0 2px #BDBDBD;
+  border-radius: 50%;
+}
+
+.custom-radio::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 8px;
+  height: 8px;
+  -webkit-box-shadow: 0 0 0 4px #fff, 0 0 0 6px #60A944;
+          box-shadow: 0 0 0 4px #fff, 0 0 0 6px #60A944;
+  background-color: #60A944;
+  border-radius: 50%;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: .3s all;
+  transition: .3s all;
 }

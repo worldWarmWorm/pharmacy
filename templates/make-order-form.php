@@ -3,22 +3,22 @@
 <?php require_once('breadcrumbs.php'); ?>
 
 <section class="make-order">
-    <h1 class="default-title">Оформить заказ</h1>
+    <h1 class="default-title">Оформить заказа</h1>
 
     <div class="make-order__content">
         <form action="" id="" method="post" class="make-order__form">
             <div class="form-data form-info">
                 <h2>Информация о покупателе <span class="num">1</span></h2>
-                <div class="form-info__content">
-                    <label>
+                <div class="form-info__content flex">
+                    <label class="name">
                         Ф.И.О. <span class="required">*</span>
                         <input type="text" name="name" id="name">
                     </label>
-                    <label>
+                    <label class="phone">
                         Телефон <span class="required">*</span>
-                        <input type="text" name="phone" id="phone">
+                        <input type="text" name="phone" id="phone" placeholder="+7 (___) ___-__-__">
                     </label>
-                    <label>
+                    <label class="email">
                         Почта <span class="required">*</span>
                         <input type="text" name="email" id="email">
                     </label>
@@ -26,33 +26,37 @@
             </div>
             <div class="form-data form-get">
                 <h2>Способ получения <span class="num">2</span></h2>
-                <div class="form-get__content">
+                <div class="form-get__content flex">
                     <label>
-                        <input type="radio" name="way-to-get" id="to-door">
+                        <input type="radio" name="way-to-get" id="to-door" checked>
+                        <span class="custom-radio"></span>
                         Доставка до двери
                     </label>
                     <label>
                         <input type="radio" name="way-to-get" id="self">
+                        <span class="custom-radio"></span>
                         Самовывоз из Аптеки
                     </label>
                 </div>
             </div>
             <div class="form-data form-pay">
                 <h2>Способы оплаты <span class="num">3</span></h2>
-                <div class="form-pay__content">
+                <div class="form-pay__content flex">
                     <label>
-                        <input type="radio" name="way-to-pay" id="card">
+                        <input type="radio" name="way-to-pay" id="card" checked>
                         Оплата картой на сайте
+                        <span class="custom-radio"></span>
                     </label>
                     <label>
                         <input type="radio" name="way-to-pay" id="cash">
                         Оплата при получении
+                        <span class="custom-radio"></span>
                     </label>
                 </div>
             </div>
             <div class="form-data form-address">
                 <h2>Адрес получения <span class="num">4</span></h2>
-                <div class="form-address__content">
+                <div class="form-address__content flex">
                     <label>
                         <input type="radio" name="address" id="address1">
                         <span class="custom-radio"></span>
