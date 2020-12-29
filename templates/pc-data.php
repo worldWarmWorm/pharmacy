@@ -1,4 +1,4 @@
-<!-- Страница личного кабинета -->
+<!-- Страница личного кабинета - личные данные -->
 
 <?php require_once('breadcrumbs.php'); ?>
 
@@ -19,31 +19,38 @@
         <div class="personal-data">
             <h2>Личные данные</h2>
             <div class="personal-data__content flex-50">
-                <div class="left flex-50">
-                    <div class="name flex">
+                <div class="left flex">
+                    <div class="flex">
                         <b>ФИО</b>
-                        <b>Телефон</b>
-                        <b>E-mail</b>
-                    </div>
-                    <div class="description flex">
                         <span>Иванов Петр Сергеевич</span>
+                    </div>
+                    <div class="flex">
+                        <b>Телефон</b>
                         <span>8 888 000 00 00</span>
+                    </div>
+                    <div class="flex">
+                        <b>E-mail</b>
                         <span>111@mail.ru</span>
                     </div>
                 </div>
-                <div class="right flex-50">
-                    <div class="name flex">
-                        <b>ФИО</b>
-                        <b>Телефон</b>
-                        <b>E-mail</b>
+                <div class="right">
+                    <div class="flex">
+                        <b>Пароль</b>
+                        <span>************</span>
                     </div>
-                    <div class="description flex">
-                        <span>Иванов Петр Сергеевич</span>
-                        <span>8 888 000 00 00</span>
-                        <span>111@mail.ru</span>
+                    <div class="flex">
+                        <b>Бонусная карта</b>
+                        <span>555 666 888</span>
+                    </div>
+                    <div class="flex">
+                        <b>БОНУСОВ</b>
+                        <span>325</span>
                     </div>
                 </div>
             </div>
+            <a href="/">Редактировать данные</a>
+            <br>
+            <a href="/">Сменить пароль</a>
         </div>
     </div>
 </section>

@@ -23,7 +23,9 @@
         <?#php require_once('templates/contacts.php'); ?>
         <?#php require_once('templates/basket.php'); ?>
         <?#php require_once('templates/make-order-form.php'); ?>
-        <?php require_once('templates/personal-cabinet.php'); ?>
+        <?#php require_once('templates/pc-data.php'); ?>
+        <?#php require_once('templates/pc-basket.php'); ?>
+        <?php require_once('templates/pc-story.php'); ?>
     </main>
 
     <?php require_once('templates/footer.php'); ?>

@@ -159,7 +159,7 @@ img {
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1200px;
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
@@ -2784,18 +2784,19 @@ h1.default-title {
       -ms-flex-align: end;
           align-items: flex-end;
 }
-.form-in-basket__content .added-item__delete {
+
+.added-item__delete {
   width: 8%;
   min-width: 56px;
 }
-.form-in-basket__content .added-item__delete button {
+.added-item__delete button {
   position: relative;
   width: 35px;
   height: 35px;
   padding: 5px;
   background-color: #fff;
 }
-.form-in-basket__content .added-item__delete button::after {
+.added-item__delete button::after {
   content: '';
   display: block;
   position: absolute;
@@ -2810,7 +2811,7 @@ h1.default-title {
   -webkit-transition: .3s all;
   transition: .3s all;
 }
-.form-in-basket__content .added-item__delete button::before {
+.added-item__delete button::before {
   content: '';
   display: block;
   position: absolute;
@@ -2825,7 +2826,7 @@ h1.default-title {
   -webkit-transition: .3s all;
   transition: .3s all;
 }
-.form-in-basket__content .added-item__delete button:hover::after, .form-in-basket__content .added-item__delete button:hover::before {
+.added-item__delete button:hover::after, .added-item__delete button:hover::before {
   background-color: #ce0000;
 }
 
@@ -2852,25 +2853,185 @@ h1.default-title {
 .personal-data {
   width: 75%;
 }
+.personal-data > a {
+  display: inline-block;
+  border-bottom: 1px solid #60A944;
+  color: #60A944;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+}
+.personal-data > a:hover {
+  border-bottom: 1px solid #006633;
+  color: #006633;
+}
 .personal-data h2 {
   font-weight: 900;
   font-size: 24px;
   line-height: 29px;
   margin-bottom: 30px;
 }
-.personal-data .personal-data__content .name {
-  font-size: 13px;
-  line-height: 16px;
+.personal-data .personal-data__content .left,
+.personal-data .personal-data__content .right {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.personal-data .personal-data__content .description {
+.personal-data .personal-data__content .left > div,
+.personal-data .personal-data__content .right > div {
+  margin-bottom: 10px;
+}
+.personal-data .personal-data__content .left > div b,
+.personal-data .personal-data__content .right > div b {
+  width: 40%;
+  font-size: 13px;
+  line-height: 21px;
+  padding: 0 15px;
+}
+.personal-data .personal-data__content .left > div span,
+.personal-data .personal-data__content .right > div span {
+  width: 60%;
   font-size: 15px;
   line-height: 21px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  padding: 0 15px;
+}
+.personal-data .personal-data__content .right div:last-child span {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #393185;
+}
+
+.cabinet-basket .personal-data > p {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+.cabinet-basket .basket__item-body .basket__body-good > div a {
+  font-size: 13px;
+  line-height: 16px;
+}
+.cabinet-basket .price-switchers .toggler-btn {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+.cabinet-basket .price-switchers .count {
+  width: 30px;
+}
+.cabinet-basket .basket__item-body .basket__body-result,
+.cabinet-basket .basket__item-head .basket__item-result {
+  width: 22%;
+}
+.cabinet-basket .added-item__delete {
+  min-width: 35px;
+}
+.cabinet-basket .default-price {
+  font-size: 13px;
+  line-height: 16px;
+}
+.cabinet-basket .sale-price {
+  font-size: 16px;
+  line-height: 20px;
+}
+.cabinet-basket .basket__item-body .basket__body-cost,
+.cabinet-basket .basket__item-head .basket__item-cost {
+  width: 15%;
+}
+.cabinet-basket .basket__item-body .basket__body-switchers,
+.cabinet-basket .basket__item-head .basket__item-quantity {
+  width: 16%;
+}
+.cabinet-basket .basket__item-body .basket__body-good,
+.cabinet-basket .basket__item-head .basket__item-name {
+  width: 47%;
+}
+.cabinet-basket .basket__body-good > span {
+  font-size: 15px;
+  line-height: 21px;
+  display: inline-block;
+  min-width: 45px;
+  text-align: right;
+}
+.cabinet-basket .basket__item-body .basket__body-good > div {
+  padding-right: 15px;
+}
+
+.cabinet-story .order-item {
+  -webkit-box-shadow: 0 0 0 1px #ECEBF3;
+          box-shadow: 0 0 0 1px #ECEBF3;
+}
+.cabinet-story .order-item .order-item__top {
+  padding: 15px 15px 15px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ECEBF3;
+  min-height: 54px;
+}
+.cabinet-story .order-item .order-item__top .order-item__name {
+  padding-right: 15px;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+}
+.cabinet-story .order-item .order-item__top .order-item__status {
+  min-width: 256px;
+  padding: 8px 15px;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+}
+.cabinet-story .order-item .order-item__bottom {
+  padding: 20px 15px 20px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.cabinet-story .order-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.order-item__status_accept {
+  -webkit-box-shadow: 0 0 0 1px #60A944;
+          box-shadow: 0 0 0 1px #60A944;
+  background-color: rgba(96, 169, 68, 0.1);
+  color: #60A944;
+}
+
+.order-item__status_reject {
+  -webkit-box-shadow: 0 0 0 1px #f00;
+          box-shadow: 0 0 0 1px #f00;
+  background-color: rgba(255, 0, 0, 0.1);
+  color: #f00;
+}
+
+.to-details {
+  -webkit-box-shadow: 0 0 0 1px #60A944;
+          box-shadow: 0 0 0 1px #60A944;
+  color: #60A944;
+}
+.to-details:hover {
+  background-color: rgba(96, 169, 68, 0.2);
+}
+
+.repeat-order {
+  -webkit-box-shadow: 0 0 0 1px #60A944;
+          box-shadow: 0 0 0 1px #60A944;
+  color: #fff;
+  background-color: #60A944;
+}
+.repeat-order:hover {
+  background-color: #006633;
 }
