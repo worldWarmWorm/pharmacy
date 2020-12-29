@@ -15,9 +15,9 @@
             </div>
             <div class="basket__item-body">
                 <div class="basket__body-good">
-                    <img src="/images/good-cart.png" alt="good-cart.png">
+                    <a href="/"><img src="/images/good-cart.png" alt="good-cart.png"></a>
                     <div>
-                        Неосмектин пор д/сусп д/вн прим ваниль 3 г пак/пач карт x10
+                        <a href="">Неосмектин пор д/сусп д/вн прим ваниль 3 г пак/пач карт x10</a>
                         <div class="chosen">
                             <label>
                                 <input type="checkbox" name="" id=""> В избранное
@@ -56,9 +56,9 @@
             </div>
             <div class="basket__item-body">
                 <div class="basket__body-good">
-                    <img src="/images/good-cart.png" alt="good-cart.png">
+                    <a href=""><img src="/images/good-cart.png" alt="good-cart.png"></a>
                     <div>
-                        Неосмектин пор д/сусп д/вн прим ваниль 3 г пак/пач карт x10
+                        <a href="/">Неосмектин пор д/сусп д/вн прим ваниль 3 г пак/пач карт x10</a>
                         <div class="chosen">
                             <label>
                                 <input type="checkbox" name="" id=""> В избранное

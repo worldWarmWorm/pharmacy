@@ -21,8 +21,9 @@
         <?#php require_once('templates/cart.php'); ?>
         <?#php require_once('templates/stocks.php'); ?>
         <?#php require_once('templates/contacts.php'); ?>
-        <?php require_once('templates/basket.php'); ?>
-        <?php require_once('templates/make-order-form.php'); ?>
+        <?#php require_once('templates/basket.php'); ?>
+        <?#php require_once('templates/make-order-form.php'); ?>
+        <?php require_once('templates/personal-cabinet.php'); ?>
     </main>
 
     <?php require_once('templates/footer.php'); ?>
