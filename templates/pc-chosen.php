@@ -1,83 +1,23 @@
-<!-- Страница подкатегорий -->
+<!-- Страница личного кабинета - избранные товары -->
 
 <?php require_once('breadcrumbs.php'); ?>
 
-<section class="sub-category">
-    <h1 class="default-title">Изделия медицинского назначения</h1>
+<section class="cabinet cabinet-current">
+    <h1 class="default-title">Личный кабинет</h1>
 
-    <div class="sub-category__content flex">
+    <div class="cabinet__content flex">
         <div class="navigation-pannel">
             <ul>
-                <li class="active"><a href="">Лекарственные средства</a></li>
-                <li><a href="">Витамины и бады</a></li>
-                <li><a href="">Изделия мед. назначения</a></li>
-                <li><a href="">Мать и дитя</a></li>
-                <li><a href="">Красота и гигиена</a></li>
-                <li><a href="">Медицинское оборудование</a></li>
-                <li><a href="">Остальные товары</a></li>
+                <li class="active"><a href="">Личные данные</a></li>
+                <li><a href="">Корзина</a></li>
+                <li><a href="">История заказов</a></li>
+                <li><a href="">Текущие заказы</a></li>
+                <li><a href="">Избранное</a></li>
+                <li><a href="">Выход</a></li>
             </ul>
         </div>
-        <div class="products">
-            <div class="sub-category__grid flex-33">
-                <div>
-                    <a href="javascript:;" class="sub-category__grid-item">
-                        <div class="sub-category__image" style="background: url(/images/sub-category.jpg);"></div>
-                        <div class="sub-category__name">ИМН, Медицинская одежда </div>
-                    </a>
-                </div>
-                <div>
-                    <a href="javascript:;" class="sub-category__grid-item">
-                        <div class="sub-category__image" style="background: url(/images/sub-category.jpg);"></div>
-                        <div class="sub-category__name">ИМН, Медицинская одежда </div>
-                    </a>
-                </div>
-                <div>
-                    <a href="javascript:;" class="sub-category__grid-item">
-                        <div class="sub-category__image" style="background: url(/images/sub-category.jpg);"></div>
-                        <div class="sub-category__name">ИМН, Предметы ухода за больными</div>
-                    </a>
-                </div>
-                <div>
-                    <a href="javascript:;" class="sub-category__grid-item">
-                        <div class="sub-category__image" style="background: url(/images/sub-category.jpg);"></div>
-                        <div class="sub-category__name">ИМН, Медицинская одежда ИМН, Медицинская одежда ИМН, Медицинская одежда </div>
-                    </a>
-                </div>
-                <div>
-                    <a href="javascript:;" class="sub-category__grid-item">
-                        <div class="sub-category__image" style="background: url(/images/sub-category.jpg);"></div>
-                        <div class="sub-category__name">ИМН, Медицинская одежда </div>
-                    </a>
-                </div>
-                <div>
-                    <a href="javascript:;" class="sub-category__grid-item">
-                        <div class="sub-category__image" style="background: url(/images/sub-category.jpg);"></div>
-                        <div class="sub-category__name">ИМН, Медицинская одежда </div>
-                    </a>
-                </div>
-            </div>
-
-            <div class="title title_brands">
-                <h2>Бренды</h2>
-            </div>
-            <div class="slider-box stateble-elements slider-brends">
-                <div>
-                    <a href="javasctipt:;" class="slider-brands__item" style="background-image: url(/images/brand1.png);"></a>
-                </div>
-                <div>
-                    <a href="javasctipt:;" class="slider-brands__item" style="background-image: url(/images/brand2.png);"></a>
-                </div>
-                <div>
-                    <a href="javasctipt:;" class="slider-brands__item" style="background-image: url(/images/brand1.png);"></a>
-                </div>
-                <div>
-                    <a href="javasctipt:;" class="slider-brands__item" style="background-image: url(/images/brand2.png);"></a>
-                </div>
-                <div>
-                    <a href="javasctipt:;" class="slider-brands__item" style="background-image: url(/images/brand1.png);"></a>
-                </div>
-            </div>
-
+        <div class="personal-data">
+            <h2>Избранное</h2>
             <div class="filters">
                 <div class="sort-way">Сортировать по:</div>
                 <div class="settings flex">
@@ -277,5 +217,7 @@
 
             </div>
         </div>
+
+
     </div>
 </section>
