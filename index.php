@@ -27,7 +27,8 @@
         <?#php require_once('templates/pc-basket.php'); ?>
         <?#php require_once('templates/pc-story.php'); ?>
         <?#php require_once('templates/pc-current.php'); ?>
-        <?php require_once('templates/pc-chosen.php'); ?>
+        <?#php require_once('templates/pc-chosen.php'); ?>
+        <?php require_once('templates/pc-order.php'); ?>
     </main>
 
     <?php require_once('templates/footer.php'); ?>

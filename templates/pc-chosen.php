@@ -48,7 +48,7 @@
             <div class="title title_popular">
                 <h2>Популярные товары</h2>
             </div>
-            <div class="slider-box popular__items stateble-elements-sub-category">
+            <div class="chosen__items flex-33">
                 <div>
                     <div class="slider-item popular__item stateble-element">
                         <div class="stateble-element__check">
