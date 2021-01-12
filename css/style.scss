@@ -6,6 +6,34 @@
 
 //==========================
 
+.fast-call {
+    display: inline-block;
+    position: fixed;
+    top: 480px;
+    right: 0;
+    width: 80px;
+    height: 56px;
+    border-radius: 56px 0px 0px 56px;
+    background-color: $c2;
+
+    a {
+        width: 46px;
+        height: 46px;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        border-radius: 46px;
+        background: #fff url(/images/call.svg) no-repeat 50%;
+
+        &:hover {
+            box-shadow: 0 0 10px $c1;
+            // animation: shake .5s;
+            animation: shake .8s 2 ease-in-out;
+            // animation-iteration-count: 2;
+        }
+    }
+}
+
 .header {
     background: url(/images/head_fon.jpg) no-repeat 50%;
     background-size: cover;
@@ -189,7 +217,7 @@
     button {
         position: absolute;
         right: 15px;
-        top: 6px;
+        top: 15px;
         width: 25px;
         height: 25px;
         cursor: pointer;
@@ -2759,12 +2787,12 @@ input[type="password"] {
         .left {
             width: 100%;
             max-width: 700px;
-    
+
             &>div b {
                 width: 30%;
             }
         }
-    
+
         .right>div b {
             width: 70%;
         }
@@ -2776,23 +2804,202 @@ input[type="password"] {
 }
 
 .reg__form {
-    max-width: 700px;
+    max-width: 730px;
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -18px 30px;
 
-    label {
+    &>label {
+        padding: 0 18px 30px;
+        width: 50%;
 
+        .text__field {
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 16px;
+        }
 
         &>span {
             display: block;
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 16px;
+            display: flex;
+            align-items: center;
+            color: #828282;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="password"] {
+            margin: 8px 0;
+        }
+    }
+
+    .reg__name {
+        width: 100%;
+    }
+
+    .reg__bottom {
+        padding: 0 18px;
+        display: flex;
+        align-items: flex-start;
+
+        .reg__policy {
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 16px;
+            position: relative;
+            margin-right: 17px;
+
+            &>div {
+                padding-left: 35px;
+
+                a {
+                    text-decoration: underline !important;
+                    color: #000;
+
+                    &:hover {
+                        color: $c2;
+                    }
+                }
+            }
+
+            .custom-checkbox {
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 5px;
+                width: 22px;
+                height: 22px;
+                border-radius: 4px;
+                background-color: $c1;
+                cursor: pointer;
+                transition: .3s all;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    left: 5px;
+                    top: 6px;
+                    width: 13px;
+                    height: 7px;
+                    border-bottom: 2px solid #fff;
+                    border-left: 2px solid #fff;
+                    transform: rotate(-45deg);
+                    cursor: pointer;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: .3s all;
+                }
+            }
+
+            input[type="checkbox"] {
+                position: absolute;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+                clip: rect(0 0 0 0);
+            }
+
+            input[type="checkbox"]:checked~.custom-checkbox::after {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+
+    .reg__password {
+        position: relative;
+
+        &>span {
+            position: absolute;
+            right: 16px;
+            top: 0;
+            color: #FF0000;
+            font-weight: normal;
         }
     }
 }
 
 .btn_reg {
+    box-shadow: 0 0 0 2px $c2;
     background-color: $c2;
     color: #fff;
+    min-width: 250px;
 
     &:hover {
         background-color: $c1;
+        box-shadow: 0 0 0 2px $c1;
+    }
+}
+
+.article__item {
+    display: flex;
+    margin-bottom: 25px;
+
+    .article__image {
+        width: 33.33%;
+        padding: 0 0 0 15px;
+        border-radius: 16px 0px 0px 16px;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: cover;
+        max-height: 400px;
+        height: 32vw;
+    }
+
+    .article__preview {
+        padding: 35px;
+        width: 66.66%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0px 16px 16px 0px;
+        box-shadow: 0 0 0 1px #ECEBF3;
+        max-height: 400px;
+        height: 32vw;
+
+        .article__full {
+            margin-top: auto;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 22px;
+            color: $c1;
+            text-align: right;
+
+            &:hover {
+                color: $c2;
+            }
+        }
+
+        .article__date {
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 16px;
+            color: #C4C4C4;
+        }
+
+        .article__title {
+            font-weight: 900;
+            font-size: 24px;
+            line-height: 29px;
+            margin: 30px 0;
+        }
+
+        .article__text {
+            height: 50%;
+            overflow-y: auto;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-family: 'Roboto';
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+            margin-bottom: 20px;
+        }
     }
 }

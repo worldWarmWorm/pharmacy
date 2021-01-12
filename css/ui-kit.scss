@@ -46,7 +46,7 @@ textarea {
     &:focus {
         outline: none;
     }
-    
+
     &::placeholder {
         color: #4F4F4F;
     }
@@ -200,4 +200,26 @@ h1.default-title {
     font-size: 32px;
     line-height: 39px;
     margin: 35px 0 45px;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    25% {
+        transform: rotate(25deg) scale(1.05);
+    }
+
+    50% {
+        transform: rotate(12.5deg) scale(1.1);
+    }
+    
+    75% {
+        transform: rotate(25deg) scale(1.05);
+    }
+
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
 }

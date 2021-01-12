@@ -1,4 +1,4 @@
-<!-- Страница личного кабинета - избранные товары -->
+<!-- Страница регистрации -->
 
 <?php require_once('breadcrumbs.php'); ?>
 
@@ -27,14 +27,15 @@
             <input type="password">
             <span>Минимум 6 симвоолов</span>
         </label>
-        <label class="reg__name">
+        <label class="reg__repeat">
             <div class="text__field">Подтверждение пароля <span class="required">*</span></div>
             <input type="password">
         </label>
         <div class="reg__bottom">
             <label class="reg__policy">
-                <input type="checkbox" name="reg" id="">
-                Нажатие кнопки "Зарегистрироваться" означает согласие с настоящей  <a href="/">Политикой конфиденциальности и Обработки персональных данных</a>
+                <input type="checkbox" name="reg" id="" checked>
+                <div>Нажатие кнопки "Зарегистрироваться" означает согласие с настоящей <a href="/">Политикой конфиденциальности и Обработки персональных данных</a></div>
+                <span class="custom-checkbox"></span>
             </label>
             <a href="/" class="btn btn_reg">Зарегистрироваться</a>
         </div>
