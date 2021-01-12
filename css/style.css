@@ -2570,11 +2570,6 @@ h1.default-title {
   font-weight: bold;
   font-size: 18px;
 }
-.make-order__content .form-data .required {
-  color: #60A944;
-  font-size: 13px;
-  line-height: 16px;
-}
 .make-order__content .btn {
   background-color: #60A944;
   color: #fff;
@@ -2586,7 +2581,16 @@ h1.default-title {
   -webkit-box-shadow: 0 0 0 2px #006633;
           box-shadow: 0 0 0 2px #006633;
 }
-.make-order__content input[type="text"] {
+
+.required {
+  color: #60A944;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="password"] {
   border-radius: 2px;
   -webkit-box-shadow: 0 0 0 2px #60A944;
           box-shadow: 0 0 0 2px #60A944;
@@ -2596,7 +2600,9 @@ h1.default-title {
   -webkit-transition: .3s all;
   transition: .3s all;
 }
-.make-order__content input[type="text"]:focus {
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus {
   -webkit-box-shadow: 0 0 0 2px #60A944, inset 0 0 0 2px rgba(0, 102, 51, 0.2);
           box-shadow: 0 0 0 2px #60A944, inset 0 0 0 2px rgba(0, 102, 51, 0.2);
 }
@@ -3211,4 +3217,20 @@ h1.default-title {
 }
 .cabinet-order .personal-data__content {
   margin-top: 15px;
+}
+
+.reg__form {
+  max-width: 700px;
+  position: relative;
+}
+.reg__form label > span {
+  display: block;
+}
+
+.btn_reg {
+  background-color: #60A944;
+  color: #fff;
+}
+.btn_reg:hover {
+  background-color: #006633;
 }

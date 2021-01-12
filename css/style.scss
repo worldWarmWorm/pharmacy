@@ -2114,12 +2114,6 @@
                 font-size: 18px;
             }
         }
-
-        .required {
-            color: $c2;
-            font-size: 13px;
-            line-height: 16px;
-        }
     }
 
     .btn {
@@ -2132,18 +2126,26 @@
             box-shadow: 0 0 0 2px $c1;
         }
     }
+}
 
-    input[type="text"] {
-        border-radius: 2px;
-        box-shadow: 0 0 0 2px $c2;
-        padding: 13.5px 15px;
-        width: 100%;
-        margin: 6px 0 21px;
-        transition: .3s all;
+.required {
+    color: $c2;
+    font-size: 13px;
+    line-height: 16px;
+}
 
-        &:focus {
-            box-shadow: 0 0 0 2px $c2, inset 0 0 0 2px rgba($c1, .2);
-        }
+input[type="text"],
+input[type="tel"],
+input[type="password"] {
+    border-radius: 2px;
+    box-shadow: 0 0 0 2px $c2;
+    padding: 13.5px 15px;
+    width: 100%;
+    margin: 6px 0 21px;
+    transition: .3s all;
+
+    &:focus {
+        box-shadow: 0 0 0 2px $c2, inset 0 0 0 2px rgba($c1, .2);
     }
 }
 
@@ -2770,5 +2772,27 @@
 
     .personal-data__content {
         margin-top: 15px;
+    }
+}
+
+.reg__form {
+    max-width: 700px;
+    position: relative;
+
+    label {
+
+
+        &>span {
+            display: block;
+        }
+    }
+}
+
+.btn_reg {
+    background-color: $c2;
+    color: #fff;
+
+    &:hover {
+        background-color: $c1;
     }
 }

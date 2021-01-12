@@ -22,13 +22,14 @@
         <?#php require_once('templates/stocks.php'); ?>
         <?#php require_once('templates/contacts.php'); ?>
         <?#php require_once('templates/basket.php'); ?>
-        <?#php require_once('templates/make-order-form.php'); ?>
+        <?php require_once('templates/make-order-form.php'); ?>
         <?#php require_once('templates/pc-data.php'); ?>
         <?#php require_once('templates/pc-basket.php'); ?>
         <?#php require_once('templates/pc-story.php'); ?>
         <?#php require_once('templates/pc-current.php'); ?>
         <?#php require_once('templates/pc-chosen.php'); ?>
-        <?php require_once('templates/pc-order.php'); ?>
+        <?#php require_once('templates/pc-order.php'); ?>
+        <?php require_once('templates/registration.php'); ?>
     </main>
 
     <?php require_once('templates/footer.php'); ?>
