@@ -1,3 +1,5 @@
+<!-- Форма каталога товаров -->
+
 <div id="catalog" class="catalog">
     <h2 class="catalog__title">Каталог товаров</h2>
     <div class="catalog__content">

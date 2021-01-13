@@ -24,10 +24,10 @@
                         <span class="count">10</span>
                         <div class="link_title">Корзина</div>
                     </a>
-                    <a href="javascript:;" class="registration" title="Личный кабинет">
+                    <div class="registration" title="Личный кабинет">
                         <img src="/images/reg.png" alt="reg.png">
-                        <div class="link_title">Вход /<br>Регистрация</div>
-                    </a>
+                        <div class="link_title"><a href="#entry" class="registration__link" data-fancybox>Вход</a> /<br><a href="/" class="registration__link">Регистрация</a></div>
+                    </div>
                     <div class="phone">
                         <a href="tel:73333332211" title="Поозвонить нам">+7 333 333 22 11</a>
                     </div>

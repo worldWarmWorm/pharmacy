@@ -146,7 +146,7 @@ $(function () {
 		});
 	});
 
-	
+	console.log(111)
 });
 
 $(function () {
@@ -156,3 +156,4 @@ $(function () {
 $(window).resize(function () {
 	fixedFooter();
 });
+

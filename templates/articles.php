@@ -1,9 +1,9 @@
 <!-- Страница статей -->
 
-<?php require_once('breadcrumbs.php'); ?>
-
 <section class="articles">
     <h1 class="default-title">Статьи</h1>
+
+    <?php require_once('breadcrumbs.php'); ?>
 
     <div class="articles__content">
         <div class="article__item">

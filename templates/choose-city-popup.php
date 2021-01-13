@@ -1,3 +1,5 @@
+<!-- Форма выбора города -->
+
 <div id="city" class="city">
     <h2 class="city__title">Выберите ваш город</h2>
     <div class="city__current">

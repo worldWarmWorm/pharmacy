@@ -15,6 +15,7 @@
     height: 56px;
     border-radius: 56px 0px 0px 56px;
     background-color: $c2;
+    z-index: 100;
 
     a {
         width: 46px;
@@ -92,13 +93,19 @@
     }
 
     .registration {
-
         width: calc(20% - 20px);
         margin-top: 11px;
+
+        .registration__link {
+            color: #000;
+
+            &:hover {
+                color: $c2;
+            }
+        }
     }
 
     .phone {
-
         width: calc(20% - 20px);
     }
 }
@@ -217,7 +224,7 @@
     button {
         position: absolute;
         right: 15px;
-        top: 15px;
+        top: 6px;
         width: 25px;
         height: 25px;
         cursor: pointer;
@@ -2162,20 +2169,25 @@
     line-height: 16px;
 }
 
-input[type="text"],
-input[type="tel"],
-input[type="password"] {
-    border-radius: 2px;
-    box-shadow: 0 0 0 2px $c2;
-    padding: 13.5px 15px;
-    width: 100%;
-    margin: 6px 0 21px;
-    transition: .3s all;
+.registration,
+.make-order {
 
-    &:focus {
-        box-shadow: 0 0 0 2px $c2, inset 0 0 0 2px rgba($c1, .2);
+    input[type="text"],
+    input[type="tel"],
+    input[type="password"] {
+        border-radius: 2px;
+        box-shadow: 0 0 0 2px $c2;
+        padding: 13.5px 15px;
+        width: 100%;
+        margin: 6px 0 21px;
+        transition: .3s all;
+
+        &:focus {
+            box-shadow: 0 0 0 2px $c2, inset 0 0 0 2px rgba($c1, .2);
+        }
     }
 }
+
 
 .form-info__content {
     flex-wrap: wrap;
@@ -2936,6 +2948,19 @@ input[type="password"] {
     }
 }
 
+.articles,
+.article,
+.about,
+.rules {
+    .default-title {
+        margin: 0 0 30px;
+    }
+
+    .breadcrumbs {
+        margin-bottom: 25px;
+    }
+}
+
 .article__item {
     display: flex;
     margin-bottom: 25px;
@@ -2973,33 +2998,52 @@ input[type="password"] {
                 color: $c2;
             }
         }
-
-        .article__date {
-            font-weight: bold;
-            font-size: 13px;
-            line-height: 16px;
-            color: #C4C4C4;
-        }
-
-        .article__title {
-            font-weight: 900;
-            font-size: 24px;
-            line-height: 29px;
-            margin: 30px 0;
-        }
-
-        .article__text {
-            height: 50%;
-            overflow-y: auto;
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-family: 'Roboto';
-            font-weight: normal;
-            font-size: 14px;
-            line-height: 21px;
-            margin-bottom: 20px;
-        }
     }
+}
+
+.article__date {
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 16px;
+    color: #C4C4C4;
+}
+
+.article__title {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 30px 0;
+}
+
+.article__text {
+    height: 50%;
+    overflow-y: auto;
+    margin-bottom: 20px;
+
+    p {
+        font-family: 'Roboto';
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 20px;
+    }
+}
+
+.article__content {
+    .article__image {
+        height: 40vw;
+        max-height: 400px;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: cover;
+        border-radius: 16px;
+        margin: 25px 0 15px;
+    }
+}
+
+.entry {
+    background: linear-gradient(180deg, $c1 0%, $c2 100%), #60A944;
+    border-radius: 4px;
+
+    color: #fff;
 }

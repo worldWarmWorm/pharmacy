@@ -20,7 +20,7 @@
     <?php require_once('templates/header.php'); ?>
 
     <main class="main container">
-        <?#php require_once('templates/main.php'); ?>
+        <?php require_once('templates/main.php'); ?>
         <?#php require_once('templates/sub-category.php'); ?>
         <?#php require_once('templates/cart.php'); ?>
         <?#php require_once('templates/stocks.php'); ?>
@@ -34,7 +34,10 @@
         <?#php require_once('templates/pc-chosen.php'); ?>
         <?#php require_once('templates/pc-order.php'); ?>
         <?#php require_once('templates/registration.php'); ?>
-        <?php require_once('templates/articles.php'); ?>
+        <?#php require_once('templates/articles.php'); ?>
+        <?#php require_once('templates/article.php'); ?>
+        <?#php require_once('templates/about.php'); ?>
+        <?#php require_once('templates/rules.php'); ?>
     </main>
 
     <?php require_once('templates/footer.php'); ?>
@@ -45,6 +48,10 @@
 
     <div style="display: none;">
         <?php require_once('templates/catalog-popup.php'); ?>
+    </div>
+
+    <div style="display: none;">
+        <?php require_once('templates/entry-popup.php'); ?>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>

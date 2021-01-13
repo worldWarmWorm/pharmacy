@@ -563,6 +563,7 @@ h1.default-title {
   height: 56px;
   border-radius: 56px 0px 0px 56px;
   background-color: #60A944;
+  z-index: 100;
 }
 .fast-call a {
   width: 46px;
@@ -645,6 +646,12 @@ h1.default-title {
 .header__pannel .registration {
   width: calc(20% - 20px);
   margin-top: 11px;
+}
+.header__pannel .registration .registration__link {
+  color: #000;
+}
+.header__pannel .registration .registration__link:hover {
+  color: #60A944;
 }
 .header__pannel .phone {
   width: calc(20% - 20px);
@@ -774,7 +781,7 @@ h1.default-title {
 .header__serach button {
   position: absolute;
   right: 15px;
-  top: 15px;
+  top: 6px;
   width: 25px;
   height: 25px;
   cursor: pointer;
@@ -2659,9 +2666,12 @@ h1.default-title {
   line-height: 16px;
 }
 
-input[type="text"],
-input[type="tel"],
-input[type="password"] {
+.registration input[type="text"],
+.registration input[type="tel"],
+.registration input[type="password"],
+.make-order input[type="text"],
+.make-order input[type="tel"],
+.make-order input[type="password"] {
   border-radius: 2px;
   -webkit-box-shadow: 0 0 0 2px #60A944;
           box-shadow: 0 0 0 2px #60A944;
@@ -2671,9 +2681,12 @@ input[type="password"] {
   -webkit-transition: .3s all;
   transition: .3s all;
 }
-input[type="text"]:focus,
-input[type="tel"]:focus,
-input[type="password"]:focus {
+.registration input[type="text"]:focus,
+.registration input[type="tel"]:focus,
+.registration input[type="password"]:focus,
+.make-order input[type="text"]:focus,
+.make-order input[type="tel"]:focus,
+.make-order input[type="password"]:focus {
   -webkit-box-shadow: 0 0 0 2px #60A944, inset 0 0 0 2px rgba(0, 102, 51, 0.2);
           box-shadow: 0 0 0 2px #60A944, inset 0 0 0 2px rgba(0, 102, 51, 0.2);
 }
@@ -3422,6 +3435,19 @@ input[type="password"]:focus {
           box-shadow: 0 0 0 2px #006633;
 }
 
+.articles .default-title,
+.article .default-title,
+.about .default-title,
+.rules .default-title {
+  margin: 0 0 30px;
+}
+.articles .breadcrumbs,
+.article .breadcrumbs,
+.about .breadcrumbs,
+.rules .breadcrumbs {
+  margin-bottom: 25px;
+}
+
 .article__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3465,27 +3491,47 @@ input[type="password"]:focus {
 .article__item .article__preview .article__full:hover {
   color: #60A944;
 }
-.article__item .article__preview .article__date {
+
+.article__date {
   font-weight: bold;
   font-size: 13px;
   line-height: 16px;
   color: #C4C4C4;
 }
-.article__item .article__preview .article__title {
+
+.article__title {
   font-weight: 900;
   font-size: 24px;
   line-height: 29px;
   margin: 30px 0;
 }
-.article__item .article__preview .article__text {
+
+.article__text {
   height: 50%;
   overflow-y: auto;
   margin-bottom: 20px;
 }
-.article__item .article__preview p {
+.article__text p {
   font-family: 'Roboto';
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
   margin-bottom: 20px;
+}
+
+.article__content .article__image {
+  height: 40vw;
+  max-height: 400px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 16px;
+  margin: 25px 0 15px;
+}
+
+.entry {
+  background: -webkit-gradient(linear, left top, left bottom, from(#006633), to(#60A944)), #60A944;
+  background: linear-gradient(180deg, #006633 0%, #60A944 100%), #60A944;
+  border-radius: 4px;
+  color: #fff;
 }
