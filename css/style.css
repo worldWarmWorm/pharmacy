@@ -3534,4 +3534,107 @@ h1.default-title {
   background: linear-gradient(180deg, #006633 0%, #60A944 100%), #60A944;
   border-radius: 4px;
   color: #fff;
+  max-width: 460px;
+  padding: 40px 60px 50px;
+}
+.entry .entry__title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 39px;
+  margin-bottom: 25px;
+}
+.entry label {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+.entry label input {
+  width: 100%;
+  padding: 12.5px 14px;
+  background-color: #fff;
+  border-radius: 2px;
+  margin: 8px 0 10px;
+  -webkit-box-shadow: 0 0 0 1px #fff;
+          box-shadow: 0 0 0 1px #fff;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+.entry label input:focus {
+  -webkit-box-shadow: 0 0 0 1px #255F9F, 0 0 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 0 1px #255F9F, 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.entry label.entry-error input {
+  -webkit-box-shadow: 0 0 0 1px #f00;
+          box-shadow: 0 0 0 1px #f00;
+}
+.entry .entry-form__password {
+  position: relative;
+}
+.entry .entry-form__password .reset {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+.entry .entry-form__password span.entry-error {
+  -webkit-transition: .3s all;
+  transition: .3s all;
+  background-color: #f00;
+  color: #fff;
+  display: block;
+  line-height: 21px;
+  text-align: center;
+}
+.entry .entry-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.entry .entry-form__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px -15px 0;
+}
+.entry .entry-form__buttons button {
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.entry .entry-form__buttons .btn_entry {
+  -webkit-box-shadow: 0 0 0 2px #393185;
+          box-shadow: 0 0 0 2px #393185;
+  background-color: #393185;
+  color: #fff;
+  min-width: 120px;
+}
+.entry .entry-form__buttons .btn_entry:hover {
+  background-color: #255F9F;
+  -webkit-box-shadow: 0 0 0 2px #255F9F;
+          box-shadow: 0 0 0 2px #255F9F;
+}
+.entry .entry-form__buttons .btn_registration {
+  background-color: transparent;
+  color: #fff;
+  min-width: 190px;
+}
+.entry .entry-form__buttons .btn_registration:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }

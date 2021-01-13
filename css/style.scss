@@ -3044,6 +3044,109 @@
 .entry {
     background: linear-gradient(180deg, $c1 0%, $c2 100%), #60A944;
     border-radius: 4px;
-
     color: #fff;
+    max-width: 460px;
+    padding: 40px 60px 50px;
+
+    .entry__title {
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 39px;
+        margin-bottom: 25px;
+    }
+
+    label {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 10px;
+        transition: .3s all;
+
+        input {
+            width: 100%;
+            padding: 12.5px 14px;
+            background-color: #fff;
+            border-radius: 2px;
+            margin: 8px 0 10px;
+            box-shadow: 0 0 0 1px #fff;
+            transition: .3s all;
+
+            &:focus {
+                box-shadow:
+                    0 0 0 1px #255F9F,
+                    0 0 5px rgba(#000, .2);
+            }
+        }
+    }
+
+    label.entry-error input {
+        box-shadow: 0 0 0 1px #f00;
+    }
+
+    .entry-form__password {
+        position: relative;
+
+        .reset {
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-family: 'Roboto';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: #fff;
+            border-bottom: 1px solid #fff;
+
+        }
+
+        span.entry-error {
+            transition: .3s all;
+            background-color: #f00;
+            color: #fff;
+            display: block;
+            line-height: 21px;
+            text-align: center;
+        }
+    }
+
+    .entry-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .entry-form__buttons {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px -15px 0;
+
+        button {
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 20px;
+            text-transform: uppercase;
+        }
+
+        .btn_entry {
+            box-shadow: 0 0 0 2px #393185;
+            background-color: #393185;
+            color: #fff;
+            min-width: 120px;
+
+            &:hover {
+                background-color: #255F9F;
+                box-shadow: 0 0 0 2px #255F9F;
+            }
+        }
+
+        .btn_registration {
+            background-color: transparent;
+            color: #fff;
+            min-width: 190px;
+
+            &:hover {
+                background-color: rgba(#fff, .2);
+            }
+        }
+    }
 }
