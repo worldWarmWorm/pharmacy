@@ -16,6 +16,7 @@
     border-radius: 56px 0px 0px 56px;
     background-color: $c2;
     z-index: 100;
+    box-shadow: 0 0 10px $c1;
 
     a {
         width: 46px;
@@ -27,10 +28,7 @@
         background: #fff url(/images/call.svg) no-repeat 50%;
 
         &:hover {
-            box-shadow: 0 0 10px $c1;
-            // animation: shake .5s;
             animation: shake .8s 2 ease-in-out;
-            // animation-iteration-count: 2;
         }
     }
 }
@@ -467,43 +465,6 @@
         display: flex;
         min-height: 48px;
 
-        .nav__catalog {
-            width: calc(25% - 15px);
-            padding: 0 15px;
-            background-color: $c1;
-            color: #fff;
-            font-weight: bold;
-            font-size: 16px;
-            line-height: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            .custom-icon {
-                width: 18px;
-                height: 18px;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                transition: .3s all;
-
-                span {
-                    width: 7px;
-                    height: 7px;
-                    background-color: #fff;
-                    border-radius: 50%;
-                }
-
-                span:first-child {
-                    margin-bottom: 4px;
-                }
-            }
-
-            &:hover .custom-icon {
-                transform: rotate(90deg);
-            }
-        }
-
         .nav__list {
             margin-bottom: 0;
             list-style: none;
@@ -531,6 +492,43 @@
                 }
             }
         }
+    }
+}
+
+.nav__catalog {
+    width: calc(25% - 15px);
+    padding: 0 15px;
+    background-color: $c1;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .custom-icon {
+        width: 18px;
+        height: 18px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        transition: .3s all;
+
+        span {
+            width: 7px;
+            height: 7px;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+
+        span:first-child {
+            margin-bottom: 4px;
+        }
+    }
+
+    &:hover .custom-icon {
+        transform: rotate(90deg);
     }
 }
 
@@ -3150,3 +3148,5 @@
         }
     }
 }
+
+@import './tablet.scss';

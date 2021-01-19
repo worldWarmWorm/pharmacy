@@ -146,7 +146,15 @@ $(function () {
 		});
 	});
 
-	console.log(111)
+	var menu_bar = $('.adaptive-nav');
+	$('body').on('click', '.burger', function() {
+		$(this).toggleClass('burder_active');
+		menu_bar.slideToggle(300);
+	});
+
+	if ($(window).width() <= 1150) {
+		$('.catalog').addClass('catalog_adaptive');
+	}
 });
 
 $(function () {
