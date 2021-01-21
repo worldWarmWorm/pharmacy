@@ -22,7 +22,7 @@
 
     <main class="main container">
         <?#php require_once('templates/main.php'); ?>
-        <?#php require_once('templates/sub-category.php'); ?>
+        <?php require_once('templates/sub-category.php'); ?>
         <?#php require_once('templates/cart.php'); ?>
         <?#php require_once('templates/stocks.php'); ?>
         <?#php require_once('templates/contacts.php'); ?>

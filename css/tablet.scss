@@ -210,14 +210,28 @@
                 display: none;
             }
         }
+    }
 
-        .fancybox-button svg path {
-            fill: #f00;
-        }
+    .fancybox-close-small {
+        padding: 5px !important;
+    }
 
-        .fancybox-close-small {
-            padding: 5px !important;
-        }
+    .fancybox-button svg path {
+        fill: #f00;
+    }
+
+    .stocks__item .stocks__item-image img {
+        height: 31.3vw;
+        max-height: 336px;
+    }
+
+    .stateble-element .stateble-element__image img {
+        height: 31.9vh;
+        max-height: 264px;
+    }
+
+    .products .slider-brends {
+        width: calc(100% - 80px);
     }
 }
 
@@ -225,10 +239,83 @@
     .catalog .catalog__content .catalog__changing-content ul li {
         width: 100%;
     }
+
+    .filters {
+        flex-wrap: wrap;
+
+        .settings {
+            width: 100%;
+        }
+    }
 }
 
 @media (max-width: 768px) {
+    .stocks__item .stocks__item-image img {
+        height: 31.3vw;
+        max-height: 336px;
+    }
 
+    .stateble-element .stateble-element__image img {
+        height: 31.9vh;
+        max-height: 264px;
+    }
+
+    .slider-box {
+        width: calc(100% - 130px);
+        margin: 0 auto;
+    }
+
+    .slider-box .slick-arrow {
+        top: calc(50% - 15px);
+    }
+
+    .slider-box .slick-prev {
+        right: unset;
+        left: -40px;
+    }
+
+    .slider-box .slick-next {
+        right: -40px;
+    }
+
+    .sub-category__content {
+        flex-direction: column;
+
+        .products {
+            width: 100%;
+        }
+        .sub-category__grid {
+            display: none;
+        }
+        .navigation-pannel {
+            width: 33.333%;
+        }
+    }
+
+    .sub-category__grid_adaptive {
+        display: flex !important;
+        width: 66.666%;
+        flex-direction: column;
+        &>div {
+            width: 100%;
+        }
+    }
+
+    .products .sub-category__grid-item {
+        flex-direction: row;
+        .sub-category__image {
+            width: 25%;
+        }
+        .sub-category__name {
+            width: 75%;
+        }
+    }
+}
+
+@media (min-width: 769px) {
+    .sub-category__grid_adaptive {
+        display: none;
+    }
 }
 
 @media (min-width: 1151px) {

@@ -73,7 +73,7 @@ function setCatalog() {
 }
 
 $(function () {
-	$('.form-address__content').on('click', 'label', function() {
+	$('.form-address__content').on('click', 'label', function () {
 		$('.form-address__content label').prop('class', false);
 		$(this).toggleClass('checked-label');
 	});
@@ -89,7 +89,21 @@ $(function () {
 	if (slider.length) {
 		$(slider).slick({
 			slidesToShow: 4,
-			speed: 1000
+			speed: 1000,
+			responsive: [
+				{
+					breakpoint: 1151,
+					settings: {
+						slidesToShow: 3
+					}
+				},
+				{
+					breakpoint: 769,
+					settings: {
+						slidesToShow: 2
+					}
+				}
+			]
 		});
 	}
 
@@ -98,7 +112,15 @@ $(function () {
 	if (sliderPopular.length) {
 		$(sliderPopular).slick({
 			slidesToShow: 3,
-			speed: 1000
+			speed: 1000,
+			responsive: [
+				{
+					breakpoint: 1151,
+					settings: {
+						slidesToShow: 2
+					}
+				}
+			]
 		});
 	}
 
@@ -128,26 +150,26 @@ $(function () {
 	setEqualHeight($(".popular__item"));
 	setEqualHeight($(".analog__item"));
 
-	$('.show-content').click(function() {
+	$('.show-content').click(function () {
 		$(this).siblings('.products__indication-content').toggleClass('more-content');
 	});
 
-	$('.products__tabs').on('click', '.products__tab', function() {
+	$('.products__tabs').on('click', '.products__tab', function () {
 		var tab = $(this).data('tab');
 
 		$(this).siblings('.products__tab').removeClass('active-tab');
 		$('.products__tab-content').removeClass('active-content');
 		$(this).addClass('active-tab');
 
-		$('.products__tab-content').each(function() {
-			if($(this).data('content') == tab) {
+		$('.products__tab-content').each(function () {
+			if ($(this).data('content') == tab) {
 				$(this).addClass('active-content');
 			}
 		});
 	});
 
 	var menu_bar = $('.adaptive-nav');
-	$('body').on('click', '.burger', function() {
+	$('body').on('click', '.burger', function () {
 		$(this).toggleClass('burder_active');
 		menu_bar.slideToggle(300);
 	});
@@ -164,4 +186,3 @@ $(function () {
 $(window).resize(function () {
 	fixedFooter();
 });
-

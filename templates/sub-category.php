@@ -57,6 +57,45 @@
                 </div>
             </div>
 
+            <div class="sub-category__grid sub-category__grid_adaptive flex-33">
+                <div>
+                    <a href="javascript:;" class="sub-category__grid-item">
+                        <div class="sub-category__image" style="background: url(/images/sub-category.jpg);"></div>
+                        <div class="sub-category__name">ИМН, Медицинская одежда </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="javascript:;" class="sub-category__grid-item">
+                        <div class="sub-category__image" style="background: url(/images/sub-category.jpg);"></div>
+                        <div class="sub-category__name">ИМН, Медицинская одежда </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="javascript:;" class="sub-category__grid-item">
+                        <div class="sub-category__image" style="background: url(/images/sub-category.jpg);"></div>
+                        <div class="sub-category__name">ИМН, Предметы ухода за больными</div>
+                    </a>
+                </div>
+                <div>
+                    <a href="javascript:;" class="sub-category__grid-item">
+                        <div class="sub-category__image" style="background: url(/images/sub-category.jpg);"></div>
+                        <div class="sub-category__name">ИМН, Медицинская одежда ИМН, Медицинская одежда ИМН, Медицинская одежда </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="javascript:;" class="sub-category__grid-item">
+                        <div class="sub-category__image" style="background: url(/images/sub-category.jpg);"></div>
+                        <div class="sub-category__name">ИМН, Медицинская одежда </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="javascript:;" class="sub-category__grid-item">
+                        <div class="sub-category__image" style="background: url(/images/sub-category.jpg);"></div>
+                        <div class="sub-category__name">ИМН, Медицинская одежда </div>
+                    </a>
+                </div>
+            </div>
+
             <div class="title title_brands">
                 <h2>Бренды</h2>
             </div>
