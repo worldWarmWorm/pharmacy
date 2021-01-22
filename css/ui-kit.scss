@@ -146,6 +146,14 @@ img {
         padding: 0 15px 30px;
         width: 50%;
     }
+
+    @media (max-width: 992px) {
+        margin: 0 -7.5px;
+
+        &>div {
+            padding: 0 7.5px 15px;
+        }
+    }
 }
 
 .btn {

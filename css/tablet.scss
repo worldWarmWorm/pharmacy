@@ -1,3 +1,23 @@
+@media (max-width: 1370px) {
+    .connect-form {
+        width: 100%;
+
+        .women {
+            display: none;
+        }
+
+        form {
+            .bottom {
+                justify-content: space-between;
+            }
+
+            .right {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
 @media (max-width: 1150px) {
     .fast-call {
         top: 300px;
@@ -233,6 +253,84 @@
     .products .slider-brends {
         width: calc(100% - 80px);
     }
+
+    .cart-item {
+        .navigation-pannel {
+            display: none;
+        }
+
+        .products {
+            width: 100%;
+
+            .products__data {
+                max-width: 100%;
+            }
+        }
+
+        .products__view {
+            flex-direction: column;
+
+            .products__images {
+                max-width: 100%;
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: center;
+                margin-bottom: 50px;
+
+                .cart-item__more-images {
+                    flex-direction: column;
+                    justify-content: space-between;
+                    margin: 0;
+
+                    img {
+                        max-width: 114px;
+                    }
+
+                    &>div {
+                        margin: 0 9px;
+                    }
+                }
+            }
+        }
+
+        .products__buttons-left {
+            width: 66.666%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 9%;
+
+            .price-switchers {
+                margin-top: 0;
+            }
+        }
+
+        .products__buttons-right {
+            width: 33.333%;
+
+            .add-to-cart,
+            .choosen {
+                margin-left: auto;
+            }
+        }
+    }
+
+    .stocks__item {
+        .stocks__item-head {
+            flex-direction: column;
+            align-items: flex-start;
+
+            .dates {
+                padding: 0;
+                background-color: transparent;
+                color: #C4C4C4;
+            }
+        }
+
+        .stocks__item-body .stocks__item-name {
+            display: none;
+        }
+    }
 }
 
 @media (max-width: 991px) {
@@ -284,31 +382,66 @@
         .products {
             width: 100%;
         }
+
         .sub-category__grid {
             display: none;
         }
+
         .navigation-pannel {
-            width: 33.333%;
+            width: calc(100% + 15px);
+            display: flex;
+            margin: 0 -7.5px 30px;
+            flex-wrap: wrap;
+
+            &>ul {
+                width: calc(33.333% - 15px);
+                margin: 0 7.5px;
+            }
         }
     }
 
     .sub-category__grid_adaptive {
         display: flex !important;
-        width: 66.666%;
+        width: calc(66.666% - 15px);
+        margin: 0 7.5px;
         flex-direction: column;
+
         &>div {
-            width: 100%;
+            width: calc(100% + 7.5px);
+            margin-bottom: 15px;
+
+            a {
+                flex-direction: row;
+                border-top: 5px solid #006633;
+
+                .sub-category__image {
+                    // min-width: 93px;
+                    width: 25%;
+                    height: 100%;
+                }
+
+                .sub-category__name {
+                    width: 75%;
+                    border-top: none;
+                }
+            }
         }
     }
 
     .products .sub-category__grid-item {
         flex-direction: row;
+
         .sub-category__image {
             width: 25%;
         }
+
         .sub-category__name {
             width: 75%;
         }
+    }
+
+    .stocks__content .stocks__item {
+        width: 50%;
     }
 }
 

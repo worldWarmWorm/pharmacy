@@ -16,9 +16,8 @@
                 <li><a href="">Медицинское оборудование</a></li>
                 <li><a href="">Остальные товары</a></li>
             </ul>
-        </div>
-        <div class="products">
-            <div class="sub-category__grid flex-33">
+
+            <div class="sub-category__grid sub-category__grid_adaptive flex">
                 <div>
                     <a href="javascript:;" class="sub-category__grid-item">
                         <div class="sub-category__image" style="background: url(/images/sub-category.jpg);"></div>
@@ -56,8 +55,9 @@
                     </a>
                 </div>
             </div>
-
-            <div class="sub-category__grid sub-category__grid_adaptive flex-33">
+        </div>
+        <div class="products">
+            <div class="sub-category__grid flex-33">
                 <div>
                     <a href="javascript:;" class="sub-category__grid-item">
                         <div class="sub-category__image" style="background: url(/images/sub-category.jpg);"></div>
