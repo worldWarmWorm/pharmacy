@@ -169,9 +169,14 @@ $(function () {
 	});
 
 	var menu_bar = $('.adaptive-nav');
-	$('body').on('click', '.burger', function () {
+	$('body').on('click', '.burger_main', function () {
 		$(this).toggleClass('burder_active');
 		menu_bar.slideToggle(300);
+	});
+
+	$('body').on('click', '.burger_cabinet', function() {
+		$(this).toggleClass('burder_active');
+		$(this).siblings('ul').slideToggle(300);
 	});
 
 	if ($(window).width() <= 1150) {

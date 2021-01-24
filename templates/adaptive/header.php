@@ -17,7 +17,7 @@
                         </div>
                     </div>
 
-                    <div class="burger">
+                    <div class="burger burger_main">
                         <span></span>
                         <span></span>
                     </div>

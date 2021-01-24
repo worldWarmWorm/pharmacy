@@ -4,7 +4,6 @@
 
 <section class="contacts">
     <h1 class="default-title">Контакты</h1>
-
     <div class="contacts__content">
         <div class="contacts__head flex">
             <div class="contacts__items">
@@ -160,14 +159,18 @@
 
             <form action="" method="post" id="" class="flex-50">
                 <div class="left">
-                    <label for="name">Имя</label>
-                    <input type="text" name="name" id="name">
-
-                    <label for="phone">Телефон</label>
-                    <input type="text" name="phone" id="phone" placeholder="+7 (___) ___ - __ - __">
-
-                    <label for="email">Почта</label>
-                    <input type="text" name="email" id="email">
+                    <label class="left_name">
+                        Имя
+                        <input type="text" name="name" id="name">
+                    </label>
+                    <label class="left_phone">
+                        Телефон
+                        <input type="text" name="phone" id="phone" placeholder="+7 (___) ___ - __ - __">
+                    </label>
+                    <label class="left_email">
+                        Почта
+                        <input type="text" name="email" id="email">
+                    </label>
                 </div>
                 <div class="right">
                     <label for="message">Сообщение</label>

@@ -47,26 +47,30 @@
             </div>
         </div>
 
-        <div class="basket__item">
+        <div class="basket__item basket__item_adaptive">
+            <div class="basket__body-good">
+                <a href="/"><img src="/images/good-cart.png" alt="good-cart.png"></a>
+                <div>
+                    <a href="">Неосмектин пор д/сусп д/вн прим ваниль 3 г пак/пач карт x10</a>
+                    <div class="chosen">
+                        <label>
+                            <input type="checkbox" name="" id=""> В избранное
+                            <span class="input-custom"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="btn-wrap">
+                    <button type="button" class="delete">
+                        <span>Удалить</span>
+                    </button>
+                </div>
+            </div>
             <div class="basket__item-head">
-                <div class="basket__item-name">Товар</div>
                 <div class="basket__item-cost">Цена за ед.</div>
                 <div class="basket__item-quantity">Количество</div>
                 <div class="basket__item-result">Сумма</div>
             </div>
-            <div class="basket__item-body">
-                <div class="basket__body-good">
-                    <a href=""><img src="/images/good-cart.png" alt="good-cart.png"></a>
-                    <div>
-                        <a href="/">Неосмектин пор д/сусп д/вн прим ваниль 3 г пак/пач карт x10</a>
-                        <div class="chosen">
-                            <label>
-                                <input type="checkbox" name="" id=""> В избранное
-                                <span class="input-custom"></span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
+            <div class="bascket__item-bottom">
                 <div class="basket__body-cost">
                     <span class="default-price">234.40 руб.</span>
                     <span class="sale-price">134.40 руб.</span>
@@ -81,13 +85,9 @@
                         <span class="default-price">234.40 руб.</span>
                         <span class="sale-price">134.40 руб.</span>
                     </div>
-                    <button type="button" class="delete">
-                        <span>Удалить</span>
-                    </button>
                 </div>
             </div>
         </div>
-
         <div class="basket__results">
             <div class="basket__result basket__result-cost">
                 <span>Товаров на сумму:</span>

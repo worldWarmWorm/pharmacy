@@ -7,6 +7,10 @@
 
     <div class="cabinet__content flex">
         <div class="navigation-pannel">
+            <div class="burger burger_cabinet">
+                <span></span>
+                <span></span>
+            </div>
             <ul>
                 <li class="active"><a href="">Личные данные</a></li>
                 <li><a href="">Корзина</a></li>
@@ -33,7 +37,7 @@
                         <span>111@mail.ru</span>
                     </div>
                 </div>
-                <div class="right">
+                <div class="right flex">
                     <div class="flex">
                         <b>Пароль</b>
                         <span>************</span>
