@@ -7,6 +7,10 @@
 
     <div class="cabinet__content flex">
         <div class="navigation-pannel">
+            <div class="burger burger_cabinet">
+                <span></span>
+                <span></span>
+            </div>
             <ul>
                 <li class="active"><a href="">Личные данные</a></li>
                 <li><a href="">Корзина</a></li>
@@ -89,7 +93,7 @@
                         Заказ №880 от 09.02.2021, 2 товара на сумму 440.10 руб.
                     </div>
                     <div class="order-item__status order-item__status_accept">
-                    Готов к выдаче
+                        Готов к выдаче
                     </div>
                 </div>
                 <div class="order-item__bottom">

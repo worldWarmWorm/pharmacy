@@ -7,6 +7,10 @@
 
     <div class="cabinet__content flex">
         <div class="navigation-pannel">
+            <div class="burger burger_cabinet">
+                <span></span>
+                <span></span>
+            </div>
             <ul>
                 <li class="active"><a href="">Личные данные</a></li>
                 <li><a href="">Корзина</a></li>

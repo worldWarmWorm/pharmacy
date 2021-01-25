@@ -28,12 +28,12 @@
         <?#php require_once('templates/contacts.php'); ?>
         <?#php require_once('templates/basket.php'); ?>
         <?#php require_once('templates/make-order-form.php'); ?>
-        <?php require_once('templates/pc-data.php'); ?>
+        <?#php require_once('templates/pc-data.php'); ?>
         <?#php require_once('templates/pc-basket.php'); ?>
         <?#php require_once('templates/pc-story.php'); ?>
         <?#php require_once('templates/pc-current.php'); ?>
         <?#php require_once('templates/pc-chosen.php'); ?>
-        <?#php require_once('templates/pc-order.php'); ?>
+        <?php require_once('templates/pc-order.php'); ?>
         <?#php require_once('templates/registration.php'); ?>
         <?#php require_once('templates/articles.php'); ?>
         <?#php require_once('templates/article.php'); ?>

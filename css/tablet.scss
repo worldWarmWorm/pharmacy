@@ -513,6 +513,7 @@
                 position: absolute;
                 top: 65px;
                 left: 7.5px;
+                z-index: 1;
                 width: calc(100% - 22.5px);
                 background-color: #fff;
                 box-shadow: 0 1000px 0 1000px rgba(0, 0, 0, .5);
@@ -530,24 +531,9 @@
                     max-width: 400px;
                 }
 
-                .left {
-                    padding: 0 7.5px;
-
-                    &>div {
-
-                        b,
-                        span {
-                            padding: 0 7.5px;
-                        }
-                    }
-                }
-
-                .right>div {
-
-                    b,
-                    span {
-                        padding: 0 7.5px;
-                    }
+                .left,
+                .right {
+                    padding-bottom: 0;
                 }
             }
         }
@@ -557,6 +543,21 @@
         margin-left: auto;
         margin-right: 7.5px;
         background-color: $c1;
+        border-radius: 0;
+    }
+
+    .navigation-pannel ul {
+        display: none;
+    }
+
+    .cabinet-basket {
+        h1 {
+            // display: none;
+        }
+    }
+
+    .personal-data > p {
+        display: none;
     }
 }
 
@@ -677,6 +678,15 @@
 
     .stocks__content .stocks__item {
         width: 50%;
+    }
+
+    .chosen__items {
+        justify-content: center;
+
+        > div {
+            max-width: 270px;
+            margin-bottom: 20px;
+        }
     }
 }
 

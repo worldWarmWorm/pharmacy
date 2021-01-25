@@ -154,6 +154,11 @@ img {
     padding: 0 7.5px 15px;
   }
 }
+@media (max-width: 768px) {
+  .flex-33 > div {
+    width: 50%;
+  }
+}
 
 .flex-50 {
   display: -webkit-box;
@@ -4206,6 +4211,7 @@ h1.default-title {
     position: absolute;
     top: 65px;
     left: 7.5px;
+    z-index: 1;
     width: calc(100% - 22.5px);
     background-color: #fff;
     -webkit-box-shadow: 0 1000px 0 1000px rgba(0, 0, 0, 0.5);
@@ -4224,22 +4230,24 @@ h1.default-title {
     width: 100%;
     max-width: 400px;
   }
-  .cabinet .personal-data .personal-data__content .left {
-    padding: 0 7.5px;
-  }
-  .cabinet .personal-data .personal-data__content .left > div b,
-  .cabinet .personal-data .personal-data__content .left > div span {
-    padding: 0 7.5px;
-  }
-  .cabinet .personal-data .personal-data__content .right > div b,
-  .cabinet .personal-data .personal-data__content .right > div span {
-    padding: 0 7.5px;
+  .cabinet .personal-data .personal-data__content .left,
+  .cabinet .personal-data .personal-data__content .right {
+    padding-bottom: 0;
   }
 
   .burger_cabinet {
     margin-left: auto;
     margin-right: 7.5px;
     background-color: #006633;
+    border-radius: 0;
+  }
+
+  .navigation-pannel ul {
+    display: none;
+  }
+
+  .personal-data > p {
+    display: none;
   }
 }
 @media (max-width: 991px) {
@@ -4365,6 +4373,16 @@ h1.default-title {
 
   .stocks__content .stocks__item {
     width: 50%;
+  }
+
+  .chosen__items {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .chosen__items > div {
+    max-width: 270px;
+    margin-bottom: 20px;
   }
 }
 @media (min-width: 769px) {
