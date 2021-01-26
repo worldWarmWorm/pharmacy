@@ -2173,7 +2173,7 @@
     line-height: 16px;
 }
 
-.registration,
+.reg,
 .make-order {
 
     input[type="text"],
@@ -2976,8 +2976,6 @@
         background-repeat: no-repeat;
         background-position: 50% 50%;
         background-size: cover;
-        max-height: 400px;
-        height: 32vw;
     }
 
     .article__preview {
@@ -2987,8 +2985,6 @@
         flex-direction: column;
         border-radius: 0px 16px 16px 0px;
         box-shadow: 0 0 0 1px #ECEBF3;
-        max-height: 400px;
-        height: 32vw;
 
         .article__full {
             margin-top: auto;
@@ -3020,8 +3016,6 @@
 }
 
 .article__text {
-    height: 50%;
-    overflow-y: auto;
     margin-bottom: 20px;
 
     p {
@@ -3029,7 +3023,6 @@
         font-weight: normal;
         font-size: 14px;
         line-height: 21px;
-        margin-bottom: 20px;
     }
 }
 

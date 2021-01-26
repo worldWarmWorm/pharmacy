@@ -2717,9 +2717,9 @@ h1.default-title {
   line-height: 16px;
 }
 
-.registration input[type="text"],
-.registration input[type="tel"],
-.registration input[type="password"],
+.reg input[type="text"],
+.reg input[type="tel"],
+.reg input[type="password"],
 .make-order input[type="text"],
 .make-order input[type="tel"],
 .make-order input[type="password"] {
@@ -2732,9 +2732,9 @@ h1.default-title {
   -webkit-transition: .3s all;
   transition: .3s all;
 }
-.registration input[type="text"]:focus,
-.registration input[type="tel"]:focus,
-.registration input[type="password"]:focus,
+.reg input[type="text"]:focus,
+.reg input[type="tel"]:focus,
+.reg input[type="password"]:focus,
 .make-order input[type="text"]:focus,
 .make-order input[type="tel"]:focus,
 .make-order input[type="password"]:focus {
@@ -3512,8 +3512,6 @@ h1.default-title {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
-  max-height: 400px;
-  height: 32vw;
 }
 .article__item .article__preview {
   padding: 35px;
@@ -3528,8 +3526,6 @@ h1.default-title {
   border-radius: 0px 16px 16px 0px;
   -webkit-box-shadow: 0 0 0 1px #ECEBF3;
           box-shadow: 0 0 0 1px #ECEBF3;
-  max-height: 400px;
-  height: 32vw;
 }
 .article__item .article__preview .article__full {
   margin-top: auto;
@@ -3558,8 +3554,6 @@ h1.default-title {
 }
 
 .article__text {
-  height: 50%;
-  overflow-y: auto;
   margin-bottom: 20px;
 }
 .article__text p {
@@ -3567,7 +3561,6 @@ h1.default-title {
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
-  margin-bottom: 20px;
 }
 
 .article__content .article__image {
@@ -3759,14 +3752,14 @@ h1.default-title {
 
   .header,
   .main-menu,
-  .basket__item {
+  .basket .basket__item {
     display: none;
   }
 
   .header_tablet,
   .main-menu_tablet,
   .actions-pannel,
-  .basket__item_adaptive {
+  .basket .basket__item_adaptive {
     display: block;
   }
 
@@ -4242,12 +4235,20 @@ h1.default-title {
     border-radius: 0;
   }
 
-  .navigation-pannel ul {
+  .personal-data > p {
     display: none;
   }
 
-  .personal-data > p {
-    display: none;
+  .cabinet-order .basket__item, .cabinet-order .basket__results {
+    max-width: 100%;
+  }
+
+  .article__item .article__preview {
+    padding: 20px;
+  }
+
+  .article__title {
+    margin: 15px 0 20px;
   }
 }
 @media (max-width: 991px) {
@@ -4270,6 +4271,10 @@ h1.default-title {
   .form-in-basket__content .added-item {
     -ms-flex-wrap: unset;
         flex-wrap: unset;
+  }
+
+  .reg__form {
+    max-width: initial;
   }
 }
 @media (max-width: 768px) {
@@ -4388,6 +4393,11 @@ h1.default-title {
 @media (min-width: 769px) {
   .sub-category__grid_adaptive {
     display: none;
+  }
+}
+@media (min-width: 993px) {
+  .cabinet__content > div {
+    padding: 0 7.5px;
   }
 }
 @media (min-width: 1151px) {
