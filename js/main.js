@@ -90,8 +90,7 @@ $(function () {
 		$(slider).slick({
 			slidesToShow: 4,
 			speed: 1000,
-			responsive: [
-				{
+			responsive: [{
 					breakpoint: 1151,
 					settings: {
 						slidesToShow: 3
@@ -113,14 +112,12 @@ $(function () {
 		$(sliderPopular).slick({
 			slidesToShow: 3,
 			speed: 1000,
-			responsive: [
-				{
-					breakpoint: 1151,
-					settings: {
-						slidesToShow: 2
-					}
+			responsive: [{
+				breakpoint: 1151,
+				settings: {
+					slidesToShow: 2
 				}
-			]
+			}]
 		});
 	}
 
@@ -174,7 +171,7 @@ $(function () {
 		menu_bar.slideToggle(300);
 	});
 
-	$('body').on('click', '.burger_cabinet', function() {
+	$('body').on('click', '.burger_cabinet', function () {
 		$(this).toggleClass('burder_active');
 		$(this).siblings('ul').slideToggle(300);
 	});

@@ -60,14 +60,16 @@
 
     .header,
     .main-menu,
-    .basket .basket__item {
+    .basket .basket__item,
+    .cabinet .basket__item {
         display: none;
     }
 
     .header_tablet,
     .main-menu_tablet,
     .actions-pannel,
-    .basket .basket__item_adaptive {
+    .basket .basket__item_adaptive,
+    .cabinet .basket__item_adaptive {
         display: block;
     }
 
@@ -546,19 +548,6 @@
         border-radius: 0;
     }
 
-    // .sub-category {
-    //     .navigation-pannel ul {
-    //         display: none;
-    //     }
-    // }
-
-
-    .cabinet-basket {
-        h1 {
-            // display: none;
-        }
-    }
-
     .personal-data > p {
         display: none;
     }
@@ -572,6 +561,16 @@
 
     .article__title {
         margin: 15px 0 20px;
+    }
+
+    .param-filter {
+        .param-filter__buttons {
+            flex-direction: column;
+
+            .btn_reset {
+                margin-bottom: 20px;
+            }
+        }
     }
 }
 

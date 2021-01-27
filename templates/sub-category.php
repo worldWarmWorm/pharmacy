@@ -55,6 +55,21 @@
                     </a>
                 </div>
             </div>
+
+            <div class="param-filter">
+                <h3>Фильтр по параметрам</h3>
+                <p>Цена</p>
+                <div class="param-filter__inputs">
+                    <input type="text" id="input-with-keypress-0" value="0">
+                    <span></span>
+                    <input type="text" id="input-with-keypress-1" value="1000">
+                </div>
+                <div id="range"></div>
+                <div class="param-filter__buttons">
+                    <button type="reset" class="btn_reset">Сбросить</button>
+                    <button type="submit" class="btn_accept">Применить</button>
+                </div>
+            </div>
         </div>
         <div class="products">
             <div class="sub-category__grid flex-33">

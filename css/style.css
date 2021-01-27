@@ -3683,6 +3683,114 @@ h1.default-title {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+.param-filter {
+  margin-top: 30px;
+  padding: 40px 30px;
+  background-color: #ECEBF3;
+}
+.param-filter h3 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 30px;
+}
+.param-filter p {
+  font-family: 'Roboto';
+  font-size: 14px;
+  line-height: 21px;
+}
+.param-filter .param-filter__inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3px 0 55px;
+}
+.param-filter .param-filter__inputs span {
+  width: 15px;
+  height: 1px;
+  background-color: #000;
+}
+.param-filter .param-filter__inputs input[type="text"] {
+  width: 40%;
+  background-color: #fff;
+  padding: 10px;
+}
+.param-filter .param-filter__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+.param-filter .param-filter__buttons button {
+  font-size: 14px;
+  line-height: 21px;
+}
+.param-filter .param-filter__buttons .btn_reset {
+  color: #000;
+  border-bottom: 1px dashed #000;
+}
+.param-filter .param-filter__buttons .btn_reset:hover {
+  color: #60A944;
+  border-bottom: 1px dashed #60A944;
+}
+.param-filter .param-filter__buttons .btn_accept {
+  background-color: #006633;
+  color: #fff;
+  padding: 7.5px 25px;
+  border-radius: 4px;
+}
+.param-filter .param-filter__buttons .btn_accept:hover {
+  background-color: #60A944;
+}
+.param-filter .noUi-handle {
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  -webkit-box-shadow: inset 0 0 0 3px #006633;
+          box-shadow: inset 0 0 0 3px #006633;
+  border-radius: 50%;
+  outline: none;
+}
+.param-filter .noUi-handle::after, .param-filter .noUi-handle::before {
+  display: none;
+}
+.param-filter .noUi-target {
+  border: none;
+  background-color: #006633;
+}
+.param-filter .noUi-connect {
+  background-color: #006633;
+}
+.param-filter .noUi-horizontal {
+  background-color: #006633;
+  height: 4px;
+}
+.param-filter .noUi-origin {
+  right: 9px;
+}
+.param-filter .noUi-tooltip {
+  background-color: #006633;
+  color: #fff;
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 1px;
+  padding: 5px 6px;
+}
+
 @media (max-width: 1370px) {
   .connect-form {
     width: 100%;
@@ -3752,14 +3860,16 @@ h1.default-title {
 
   .header,
   .main-menu,
-  .basket .basket__item {
+  .basket .basket__item,
+  .cabinet .basket__item {
     display: none;
   }
 
   .header_tablet,
   .main-menu_tablet,
   .actions-pannel,
-  .basket .basket__item_adaptive {
+  .basket .basket__item_adaptive,
+  .cabinet .basket__item_adaptive {
     display: block;
   }
 
@@ -4249,6 +4359,16 @@ h1.default-title {
 
   .article__title {
     margin: 15px 0 20px;
+  }
+
+  .param-filter .param-filter__buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .param-filter .param-filter__buttons .btn_reset {
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 991px) {
