@@ -1,4 +1,4 @@
-<!-- Шапка планшет -->
+<!-- Шапка мобильная -->
 
 <header class="header header_tablet">
     <div class="container">

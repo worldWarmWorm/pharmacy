@@ -3201,8 +3201,8 @@
             border-bottom: 1px dashed #000;
 
             &:hover {
-                color: $c2;
-                border-bottom: 1px dashed $c2;
+                color: #f00;
+                border-bottom: 1px dashed #f00;
             }
         }
 
@@ -3262,4 +3262,4 @@
     }
 }
 
-@import './tablet.scss';
+@import './mobile.scss';
