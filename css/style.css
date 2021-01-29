@@ -4602,6 +4602,27 @@ h1.default-title {
     height: calc(100vh - 200px);
     max-width: 100%;
   }
+
+  .stocks__item .stocks__item-image img {
+    height: 63.3vw;
+    max-height: 453px;
+  }
+}
+@media (max-width: 480px) {
+  .slider-box {
+    width: calc(100% - 30px);
+  }
+  .slider-box .slick-prev {
+    left: -25px;
+  }
+  .slider-box .slick-next {
+    right: -25px;
+  }
+
+  .title h2 {
+    font-size: 26px;
+    line-height: 1.3em;
+  }
 }
 @media (min-width: 769px) {
   .sub-category__grid_adaptive {

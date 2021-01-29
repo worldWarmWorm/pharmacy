@@ -725,6 +725,8 @@
     .footer__contacts_phone {
         font-size: 20px;
     }
+
+    
 }
 
 @media (max-width: 650px) {
@@ -737,7 +739,7 @@
         width: 100%;
     }
 
-    .header_tablet .header__inner .header__left  {
+    .header_tablet .header__inner .header__left {
         text-align: center;
         margin-bottom: 15px;
     }
@@ -796,6 +798,28 @@
         top: 100px;
         height: calc(100vh - 200px);
         max-width: 100%;
+    }
+
+    .stocks__item .stocks__item-image img {
+        height: 63.3vw;
+        max-height: 453px;
+    }
+}
+
+@media (max-width: 480px) {
+    .slider-box {
+        width: calc(100% - 30px);
+        .slick-prev {
+            left: -25px;
+        }
+        .slick-next {
+            right: -25px;
+        }
+    }
+
+    .title h2 {
+        font-size: 26px;
+        line-height: 1.3em;
     }
 }
 
